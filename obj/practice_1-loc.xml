@@ -1,14 +1,33 @@
 <?xml version="1.0"?>
 <Locations >
   <Project>
-    <vfs_file>C:\Users\quera\Desktop\Practica 1\Practice1\practice_1.gpr</vfs_file>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\quera\Desktop\Practica 1\Practice1\practice_1.gpr</vfs_project>
-      <vfs_file>C:\Users\quera\Desktop\Practica 1\Practice1\src\p3_1.adb</vfs_file>
+    <vfs_file>C:\Users\quera\Desktop\Practice1\practice_1.gpr</vfs_file>
+    <file_marker column=" 1" line=" 6" >
+      <vfs_project>C:\Users\quera\Desktop\Practice1\practice_1.gpr</vfs_project>
+      <vfs_file>C:\Users\quera\Desktop\Practice1\src\p3_1.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>C:\Users\quera\Desktop\Practica 1\Practice1\practice_1.gpr</vfs_project>
-      <vfs_file>C:\Users\quera\Desktop\Practica 1\Practice1\src\p3_1.ads</vfs_file>
+    <file_marker column=" 1" line=" 5" >
+      <vfs_project>C:\Users\quera\Desktop\Practice1\practice_1.gpr</vfs_project>
+      <vfs_file>C:\Users\quera\Desktop\Practice1\src\p3_1.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 129" >
+      <vfs_project>C:\Users\quera\Desktop\Practice1\practice_1.gpr</vfs_project>
+      <vfs_file>C:\Users\quera\Desktop\Practice1\src\test_p3_1.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 5" >
+      <vfs_project>C:\Users\quera\Desktop\Practice1\practice_1.gpr</vfs_project>
+      <vfs_file>C:\Users\quera\Desktop\Practice1\src\test_p3_1.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >C:\Users\quera\Desktop\Practica 1\Practice1\practice_1.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\quera\Desktop\Practica 1\Practice1\practice_1.gpr</vfs_project>
+      <vfs_file >C:\Users\quera\Desktop\Practica 1\Practice1\src\p3_1.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >C:\Users\quera\Desktop\Practica 1\Practice1\practice_1.gpr</vfs_project>
+      <vfs_file >C:\Users\quera\Desktop\Practica 1\Practice1\src\p3_1.ads</vfs_file>
     </file_marker>
   </Project>
   <Project >

@@ -1,12 +1,15 @@
 package P3_1 with SPARK_Mode => ON is
    Max : constant := 1000;
    type Vector is array(Natural range <>) of Integer;
-   type Character_Vector is array(Natural range <>) of Character;
 
 
    -- Procedimientos
 
+   Global_Vector : Vector := (-1,-1,-1,-1,-1);
 
+   procedure multiplyVectors (vec1 : Vector; vec2 : Vector) with
+     Global => (Output => Global_Vector),
+     Depends => (Global_Vector => (vec1, vec2));
 
 
    -- Funciones

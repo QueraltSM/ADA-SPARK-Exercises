@@ -3,10 +3,22 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO; 
 
 package body P3_1 with SPARK_Mode => On is
-
    
    -- Procedimientos
    
+   procedure multiplyVectors (vec1 : Vector; vec2 : Vector) is
+      count : Integer := 0;
+   begin
+      if vec1'Length <= vec2'Length then
+         count := vec1'Length;
+      else
+         count := vec2'Length;
+      end if;
+      
+      for i in 0..count-1 loop   
+         Global_Vector(i) := vec1(i)*vec2(i)*Global_Vector(i);
+      end loop;
+   end multiplyVectors;
    
    
    -- Funciones

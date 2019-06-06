@@ -3,7 +3,8 @@ with Test_Assertions;  use Test_Assertions;
 with P3_1;         use P3_1;
 
 procedure Test_P3_1 is
-   Global_Vector : Vector := (2,4,-5,9,1);
+
+   -- Tests funciones
 
    procedure Test_1 is
       Msg   : constant String := "Test_1: Compare two equal strings";
@@ -102,7 +103,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (assertion)");
       when others =>
          Put_Line (Msg & " Failed (exception)");
-   end Test_17;
+   end Test_9;
 
    procedure Test_10 is
       Msg   : constant String := "Test_18: Get_Bood_Pressure_Degree II";
@@ -113,19 +114,49 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (assertion)");
       when others =>
          Put_Line (Msg & " Failed (exception)");
-   end Test_18;
+   end Test_10;
+
+
+
+   -- Tests procedimientos
+
+      procedure Test_11 is
+      Msg   : constant String := "Test_11: multiplyVectors I";
+   begin
+      multiplyVectors((1,2),(2,1));
+      Assert_True(Global_Vector = (-2,-2,-1,-1,-1), Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_11;
+
+         procedure Test_12 is
+      Msg   : constant String := "Test_12: multiplyVectors II";
+   begin
+      multiplyVectors((3,-2,1),(2,2,-5));
+      Assert_True(Global_Vector = (-12,8,5,-1,-1), Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_12;
 
 
 begin
    Put_Line ("********* Batch Tests *********");
-   Test_1;
-   Test_2;
-   Test_3;
-   Test_4;
-   Test_5;
-   Test_6;
-   Test_7;
-   Test_8;
-   Test_9;
-   Test_10;
+--     Test_1;
+--     Test_2;
+--     Test_3;
+--     Test_4;
+--     Test_5;
+--     Test_6;
+--     Test_7;
+--     Test_8;
+--     Test_9;
+--     Test_10;
+   Test_11;
+   Test_12;
 end Test_P3_1;
