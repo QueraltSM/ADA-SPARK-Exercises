@@ -3,13 +3,13 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO; 
 
 package body P3_1 with SPARK_Mode => On is
+
    
-   procedure multiply_global_vector (vector1: Vector) is
-   begin
-      for i in vector1'range loop
-         GlobalVector(i) := vector1(i)*GlobalVector(i);
-      end loop;
-   end multiply_global_vector;
+   -- Procedimientos
+   
+   
+   
+   -- Funciones
    
    function Get_Bood_Pressure_Degree (systolic : Integer; diastolic: Integer) return String is
    begin
@@ -28,26 +28,6 @@ package body P3_1 with SPARK_Mode => On is
       end if;
       return "Error";
    end Get_Bood_Pressure_Degree;
-      
-   function Get_Lower_and_Higher (Vector1: Vector) return Vector is
-      min : Integer := Vector1(0);
-      max : Integer := Vector1(0);
-   begin
-      for i in 1..Vector1'Last loop
-         if Vector1(i) < min then
-            min := Vector1(i);
-         elsif Vector1(i) > max then
-            max := Vector1(i);
-         end if;
-         pragma Loop_Invariant(I in 1..Vector1'Last);
-         pragma Loop_Invariant(for all K in 1..I =>
-                                 (if Vector1'Loop_Entry(K) < min then
-                                       min = Vector1(K) 
-                                  elsif Vector1'Loop_Entry(K) > max then
-                                       max = Vector1(K)));
-      end loop;
-      return (min, max);
-   end Get_Lower_and_Higher;
      
    function Compare_To (String1 : String; String2 : String) return Boolean is
    begin

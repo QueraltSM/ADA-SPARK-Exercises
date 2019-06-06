@@ -3,10 +3,13 @@ package P3_1 with SPARK_Mode => ON is
    type Vector is array(Natural range <>) of Integer;
    type Character_Vector is array(Natural range <>) of Character;
 
-   GlobalVector : Vector := (1,2,3,-1,-2,-3);
 
-   procedure multiply_global_vector (vector1: Vector)
-     with Global => GlobalVector;
+   -- Procedimientos
+
+
+
+
+   -- Funciones
 
    function Get_Bood_Pressure_Degree(systolic : Integer; diastolic: Integer) return String
      with Global => null,
@@ -26,16 +29,6 @@ package P3_1 with SPARK_Mode => ON is
                                    Get_Bood_Pressure_Degree'Result =  "Hypertensive crisis (medical emergency)"
                                      else Get_Bood_Pressure_Degree'Result = "Error"))))));
 
-   function Get_Lower_and_Higher(Vector1: Vector) return Vector
-     with Global => null,
-     Depends => (Get_Lower_and_Higher'Result => (Vector1)),
-     Pre => (Vector1'Length > 0 and Vector1'Length < Max) and then Vector1'First = 0,
-     Post => (for all K in 1..Vector1'Last =>
-                (if Vector1(K) < Get_Lower_and_Higher'Result(0) then
-                     Get_Lower_and_Higher'Result(0) = Vector1(K)) or
-                  (if Vector1(K) > Get_Lower_and_Higher'Result(1) then
-                         Get_Lower_and_Higher'Result(1) = Vector1(K)));
-
    function Compare_To
      (String1: String;
       String2: String) return Boolean
@@ -51,7 +44,6 @@ package P3_1 with SPARK_Mode => ON is
                 (for all K in Vector1'Range => Vector1(K) > Number)) or
      (if Delete_Elements'Result'Length > 0 then
         (for some K in Vector1'Range => Vector1(K) <= Number));
-
 
    function Count_Lower_Elements(Vector1 : Vector; Number: Integer) return Natural
      with Global => null,

@@ -1,1 +1,0 @@
-p3_1.adb:10:10: high: "GlobalVector" must be listed in the Global aspect of "multiply_global_vector" (SPARK RM 6.1.4(13))[#0]

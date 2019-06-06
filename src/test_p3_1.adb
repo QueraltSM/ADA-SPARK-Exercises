@@ -93,7 +93,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_8;
 
-   procedure Test_17 is
+   procedure Test_9 is
       Msg   : constant String := "Test_17: Get_Bood_Pressure_Degree I";
    begin
       Assert_True(Get_Bood_Pressure_Degree(85,72)="Normal", Msg);
@@ -104,7 +104,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_17;
 
-   procedure Test_18 is
+   procedure Test_10 is
       Msg   : constant String := "Test_18: Get_Bood_Pressure_Degree II";
    begin
       Assert_True(Get_Bood_Pressure_Degree(136,72)="Prehypertension", Msg);
@@ -115,29 +115,6 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_18;
 
-   procedure Test_19 is
-      Msg   : constant String := "Test_19: Multiply Global Vector I";
-   begin
-      multiply_global_vector((1,2,3));
-      Assert_True(GlobalVector=(1,4,9,-1,-2,-3), Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_19;
-
-   procedure Test_20 is
-      Msg   : constant String := "Test_20: Multiply Global Vector II";
-   begin
-      multiply_global_vector((-1,-2,-3,-8,5,10));
-      Assert_True(GlobalVector=(-1,-8,-27,8,-10,-30), Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_20;
 
 begin
    Put_Line ("********* Batch Tests *********");
@@ -149,8 +126,6 @@ begin
    Test_6;
    Test_7;
    Test_8;
-   Test_17;
-   Test_18;
-   Test_19;
-   Test_20;
+   Test_9;
+   Test_10;
 end Test_P3_1;
