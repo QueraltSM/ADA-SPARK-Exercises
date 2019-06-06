@@ -1,0 +1,24 @@
+{
+  "spark": [
+    {
+      "name": "Test_P3_1",
+      "sloc": [
+        {
+          "file": "test_p3_1.adb",
+          "line": 5
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 4.82637993991375E-03,
+    "globals (basic)": 4.14454303681850E-02,
+    "globals/properties (advanced)": 6.50723502039909E-02,
+    "flow analysis": 2.77568004094064E-04
+  }
+}

@@ -1,0 +1,120 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -g
+A -gnata
+A -gnat12
+A -fstack-check
+A -gnato
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U p3_1%b		p3_1.adb		d56d8688 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W p3_1%s		p3_1.adb		p3_1.ali
+
+U p3_1%s		p3_1.ads		c659d2f4 OO PK IL
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-inteio.ads		20180524051738 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-tiinio.ads		20180524051736 aa04e5d6 ada.text_io.integer_io%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D p3_1.ads		20190404184108 c659d2f4 p3_1%s
+D p3_1.adb		20190404183326 ab3bbc76 p3_1%b
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 10|2r6 2r23 3r6 3r31
+X 2 a-inteio.ads
+18K13*Integer_Text_IO[6|46] 10|3w10 3r35
+X 5 a-textio.ads
+49K13*Text_IO 471e16 10|2w10 2r27
+X 9 p3_1.ads
+1K9*P3_1 66l5 66e9 10|1w6 1r16 5b14 98l5 98t9
+2N4*Max 32r54 49r30 59r30
+3A9*Vector(integer)<integer> 6r19 8r47 29r43 29r58 46r39 46r71 56r44 10|7r47
+. 32r44 32r59 57r39 57r71 58r20 82r44
+4A9*Character_Vector(character)<integer>
+6a4*GlobalVector{3A9} 10|10m10 10r40
+8U14*multiply_global_vector 8>38 10|7b14 12l8 12t30
+8a38 vector1{3A9} 10|7b38 9r16 10r29
+11V13*Get_Bood_Pressure_Degree{string} 11>38 11>58 13r18 16r17 18r24 20r27
+. 22r30 24r33 26r36 27r43 10|14b13 30l8 30t32
+11i38 systolic{integer} 13r54 14r13 14r30 15r18 17r23 17r41 19r27 19r46 21r30
+. 21r49 23r32 25r35 10|14b39 16r10 18r13 18r31 20r14 20r33 22r14 22r33 24r13
+. 26r13
+11i58 diastolic{integer} 13r64 14r58 14r76 15r35 17r60 17r79 19r66 19r85
+. 21r69 21r88 23r50 25r53 10|14b59 16r27 18r50 18r69 20r53 20r72 22r53 22r72
+. 24r31 26r31
+29V13*Get_Lower_and_Higher{3A9} 29>34 31r18 34r34 35r22 36r36 37r26 10|32b13
+. 50l8 50t28
+29a34 Vector1{3A9} 31r50 32r14 32r37 32r68 33r31 34r21 35r55 36r23 37r59
+. 10|32b35 33r24 34r24 36r19 37r13 38r20 39r16 40r20 42r40 44r38 45r46 46r41
+. 47r46
+33i23 K{integer} 34r29 35r63 36r31 37r67
+39V13*Compare_To{boolean} 40>7 41>7 43r18 44r14 10|52b13 55l8 55t18
+40a7 String1{string} 43r40 44r35 10|52b25 54r14
+41a7 String2{string} 43r48 44r45 10|52b43 54r22
+46V13*Delete_Elements{3A9} 46>30 46>47 48r18 50r18 52r10 10|57b13 80l8 80t23
+46a30 Vector1{3A9} 48r45 49r13 49r43 51r31 51r48 53r24 53r41 10|57b30 58r53
+. 64r16 65r13 66r30 72r64 75r30 75r50 77r29 77r49
+46i47 Number{integer} 48r54 51r61 53r55 10|57b47 58r62 65r27 75r64 77r62
+51i26 K{integer} 51r56
+53i19 K{integer} 53r49
+56V13*Count_Lower_Elements{natural} 56>34 56>52 58r18 60r42 61r10 10|58s32
+. 82b13 97l8 97t28
+56a34 Vector1{3A9} 58r50 59r13 59r43 60r18 62r24 62r41 64r23 64r40 10|82b34
+. 83r22 86r16 87r13 91r37 91r52 93r44
+56i52 Number{integer} 58r59 62r52 64r52 10|82b52 87r24
+62i19 K{integer} 62r49
+64i18 X{integer} 64r48
+X 10 p3_1.adb
+9i11 i{integer} 10r23 10r37 10r53
+33i7 min{integer} 37r26 38m13 44r62 45r40 49r15
+34i7 max{integer} 39r29 40m13 46r65 47r40 49r20
+36i11 i{integer} 37r21 38r28 39r24 40r28 42r32 43r48
+43i40 K{integer} 44r57 45r54 46r60 47r54
+58a7 Aux_Vector{9|3A9} 61r10 66m13 68r20 69r23 72r38 79r14
+59i7 j{natural} 66r24 67m13 67r18 68r16 72r33 74r16
+64i11 i{integer} 65r21 66r38 72r59 75r45 77r44
+75i25 K{integer} 75r58
+77i24 K{integer} 77r57
+83i7 i{natural} 86r13 87r21 90r43 91r32 92r44 93r42 94m10 94r15
+84i7 Count{natural} 88m13 88r22 92r32 93r32 96r14
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS p3_1__multiply_global_vector 0
+GG EK_GLOBALS p3_1__multiply_global_vector local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 p3_1__globalvector LOCKS 0
+GG EK_DIRECT_CALLS p3_1__get_bood_pressure_degree 0
+GG EK_GLOBALS p3_1__get_bood_pressure_degree local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS p3_1__get_lower_and_higher 0
+GG EK_GLOBALS p3_1__get_lower_and_higher local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS p3_1__compare_to 0
+GG EK_GLOBALS p3_1__compare_to local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS p3_1__delete_elements 1 p3_1__count_lower_elements
+GG EK_GLOBALS p3_1__delete_elements local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS p3_1__count_lower_elements 0
+GG EK_GLOBALS p3_1__count_lower_elements local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS p3_1 0
+GG EK_GLOBALS p3_1 local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 1 p3_1__globalvector calls_proof 0 calls 0 calls_conditional 0 local_var 1 p3_1__globalvector FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

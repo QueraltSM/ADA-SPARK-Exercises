@@ -1,0 +1,12 @@
+20190404184112
+-c
+-x
+ada
+-gnatA
+-g
+-gnata
+-gnat12
+-fstack-check
+-gnato
+-gnatc
+-gnates=C:\Users\quera\Desktop\Practice1\obj\gnatprove\048a7e19.tmp

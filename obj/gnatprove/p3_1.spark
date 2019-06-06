@@ -1,0 +1,696 @@
+{
+  "spark": [
+    {
+      "name": "P3_1",
+      "sloc": [
+        {
+          "file": "p3_1.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "P3_1.multiply_global_vector",
+      "sloc": [
+        {
+          "file": "p3_1.ads",
+          "line": 8
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "P3_1.Get_Bood_Pressure_Degree",
+      "sloc": [
+        {
+          "file": "p3_1.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "P3_1.Get_Lower_and_Higher",
+      "sloc": [
+        {
+          "file": "p3_1.ads",
+          "line": 29
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "P3_1.Compare_To",
+      "sloc": [
+        {
+          "file": "p3_1.ads",
+          "line": 39
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "P3_1.Delete_Elements",
+      "sloc": [
+        {
+          "file": "p3_1.ads",
+          "line": 46
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "P3_1.Count_Lower_Elements",
+      "sloc": [
+        {
+          "file": "p3_1.ads",
+          "line": 56
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "p3_1.adb",
+      "line": 37,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Lower_and_Higher",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 29
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__66.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 39,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Lower_and_Higher",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 29
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__67.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 43,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Lower_and_Higher",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 29
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__68.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 43,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Lower_and_Higher",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 29
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__69.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 49,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Lower_and_Higher",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 29
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__70.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 49,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Lower_and_Higher",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 29
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__71.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 66,
+      "col": 27,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 46
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__136.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 66,
+      "col": 27,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 46
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__137.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 67,
+      "col": 15,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 46
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__138.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 68,
+      "col": 13,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 46
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__139.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 69,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 46
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__140.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 72,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 46
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__141.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 73,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 46
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__142.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 79,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 46
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__143.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 87,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__177.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 88,
+      "col": 19,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__178.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 90,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__179.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 91,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__180.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 92,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__181.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 92,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__182.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 93,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__183.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 93,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__184.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 94,
+      "col": 12,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__185.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 86,
+      "col": 29,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__186.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 96,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "p3_1__flow__187.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 10,
+      "col": 10,
+      "rule": "EMPTY_TAG",
+      "severity": "high",
+      "entity": {
+        "name": "P3_1.multiply_global_vector",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 8
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 0,
+      "how_proved": "flow"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "P3_1.Count_Lower_Elements",
+            "sloc": [
+              {
+                "file": "p3_1.ads",
+                "line": 56
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "P3_1.Delete_Elements",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 46
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "P3_1.Get_Bood_Pressure_Degree",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "P3_1.Count_Lower_Elements",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "P3_1.Get_Lower_and_Higher",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 29
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "P3_1.Compare_To",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 39
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 4.97855804860592E-03,
+    "globals (basic)": 3.85107286274433E-02,
+    "globals/properties (advanced)": 6.72849193215370E-02,
+    "flow analysis": 4.12054769694805E-02
+  }
+}
