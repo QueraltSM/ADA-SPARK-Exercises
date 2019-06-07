@@ -1,0 +1,1 @@
+p3_1.ads:12:18: read-only global "Global_Vector" cannot appear as output in dependence relation

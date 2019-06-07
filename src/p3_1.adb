@@ -6,24 +6,30 @@ package body P3_1 with SPARK_Mode => On is
    
    -- Procedimientos
    
-   procedure multiplyVectors (vec1 : Vector; vec2 : Vector) is
-      count : Integer := 0;
+   procedure multiplyVectors (vec1, vec2 : Vector) is
+      count : Integer := getMaxCount(vec1,vec2);
    begin
-      if vec1'Length <= vec2'Length then
-         count := vec1'Length;
-      else
-         count := vec2'Length;
-      end if;
-      
-      for i in 0..count-1 loop   
+      for i in 0..count-1 loop
+         --pragma Loop_Invariant (i in 0..count-1);
+         --pragma Loop_Invariant (for all K in 0..i =>(Global_Vector(K) = vec1(K)*vec2(K)*Global_Vector(K)));
+         
          Global_Vector(i) := vec1(i)*vec2(i)*Global_Vector(i);
+      
       end loop;
    end multiplyVectors;
    
    
    -- Funciones
    
-   function Get_Bood_Pressure_Degree (systolic : Integer; diastolic: Integer) return String is
+   function getMaxCount (vec1, vec2: Vector) return Integer is
+   begin
+      if vec1'Length <= vec2'Length then
+         return vec1'Length;
+      end if;
+      return vec2'Length;
+   end getMaxCount;
+   
+   function Get_Bood_Pressure_Degree (systolic, diastolic: Integer) return String is
    begin
       if systolic < 80 or diastolic < 60 then
          return "Hypotension";
@@ -41,7 +47,7 @@ package body P3_1 with SPARK_Mode => On is
       return "Error";
    end Get_Bood_Pressure_Degree;
      
-   function Compare_To (String1 : String; String2 : String) return Boolean is
+   function Compare_To (String1, String2 : String) return Boolean is
    begin
       return String1=String2;
    end Compare_To;

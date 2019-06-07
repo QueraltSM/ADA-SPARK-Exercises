@@ -116,12 +116,36 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_10;
 
+         procedure Test_11 is
+      Msg   : constant String := "Test_11: getMaxCount I";
+   begin
+      Assert_True(getMaxCount((2,-5,10),(1 => 1)) = 1, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_11;
+
+
+         procedure Test_12 is
+      Msg   : constant String := "Test_12: getMaxCount I";
+      empty_Array : Vector (1..0) := (others => 0);
+   begin
+      Assert_True(getMaxCount(empty_Array,(1,2,-4)) = 0, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_12;
+
 
 
    -- Tests procedimientos
 
-      procedure Test_11 is
-      Msg   : constant String := "Test_11: multiplyVectors I";
+      procedure Test_13 is
+      Msg   : constant String := "Test_13: multiplyVectors I";
    begin
       multiplyVectors((1,2),(2,1));
       Assert_True(Global_Vector = (-2,-2,-1,-1,-1), Msg);
@@ -130,10 +154,10 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (assertion)");
       when others =>
          Put_Line (Msg & " Failed (exception)");
-   end Test_11;
+   end Test_13;
 
-         procedure Test_12 is
-      Msg   : constant String := "Test_12: multiplyVectors II";
+         procedure Test_14 is
+      Msg   : constant String := "Test_14: multiplyVectors II";
    begin
       multiplyVectors((3,-2,1),(2,2,-5));
       Assert_True(Global_Vector = (-12,8,5,-1,-1), Msg);
@@ -142,7 +166,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (assertion)");
       when others =>
          Put_Line (Msg & " Failed (exception)");
-   end Test_12;
+   end Test_14;
 
 
 begin
@@ -159,4 +183,6 @@ begin
 --     Test_10;
    Test_11;
    Test_12;
+   Test_13;
+   Test_14;
 end Test_P3_1;

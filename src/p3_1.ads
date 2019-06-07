@@ -5,16 +5,24 @@ package P3_1 with SPARK_Mode => ON is
 
    -- Procedimientos
 
-   Global_Vector : Vector := (-1,-1,-1,-1,-1);
+   Global_Vector :  Vector := (-1,-1,-1,-1,-1);
 
-   procedure multiplyVectors (vec1 : Vector; vec2 : Vector) with
-     Global => (Output => Global_Vector),
-     Depends => (Global_Vector => (vec1, vec2));
+
+   procedure multiplyVectors (vec1, vec2 : Vector) with
+     Global => (Input => Global_Vector);
+--       Depends => (
+--                     Global_Vector => (vec1, vec2)),
+--       Pre => vec1'Length > 0 and vec2'Length > 0,
+--       Post => (for all K in vec1'Range =>
+--                  (Global_Vector(K) = Global_Vector(K)*vec1(K)*vec2(K)));
 
 
    -- Funciones
 
-   function Get_Bood_Pressure_Degree(systolic : Integer; diastolic: Integer) return String
+   function getMaxCount(vec1, vec2: Vector) return Integer
+     with Global => null;
+
+   function Get_Bood_Pressure_Degree(systolic, diastolic: Integer) return String
      with Global => null,
      Depends => (Get_Bood_Pressure_Degree'Result => (systolic, diastolic)),
      Pre => systolic > 0 and systolic < Integer'Last and diastolic > 0 and diastolic < Integer'Last,
@@ -32,9 +40,7 @@ package P3_1 with SPARK_Mode => ON is
                                    Get_Bood_Pressure_Degree'Result =  "Hypertensive crisis (medical emergency)"
                                      else Get_Bood_Pressure_Degree'Result = "Error"))))));
 
-   function Compare_To
-     (String1: String;
-      String2: String) return Boolean
+   function Compare_To (String1, String2: String) return Boolean
      with Global => null,
      Depends => (Compare_To'Result => (String1,String2)),
      Post => Compare_To'Result = (String1 = String2);
