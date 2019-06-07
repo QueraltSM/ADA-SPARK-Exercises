@@ -5,8 +5,12 @@ package P3_1 with SPARK_Mode => ON is
 
    -- Procedimientos
 
-   Global_Vector :  Vector := (-1,-1,-1,-1,-1);
+   Global_Vector :  Vector := (-1,-1,5,10,10);
    Global_Inverse_Vector : Vector := (-3, 5, 9, 0, 22);
+   Increment : Integer := 1;
+
+   procedure Search_And_Increment (number: Integer) with
+     Global => null;
 
    procedure getQuadraticEquation (A, B, C : Float; R1, R2  : out Float) with
      Global => null;

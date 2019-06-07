@@ -209,6 +209,31 @@ procedure Test_P3_1 is
    end Test_17;
 
 
+   procedure Test_18 is
+      Msg   : constant String := "Test_18: Search_And_Increment I";
+   begin
+      Search_And_Increment(5);
+      Assert_True(Global_Vector = (-1,-1,6,-1,-1) and Increment = 6, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_18;
+
+      procedure Test_19 is
+      Msg   : constant String := "Test_19: Search_And_Increment II";
+   begin
+      Search_And_Increment(10);
+      Assert_True(Global_Vector = (-1,-1,5,11,21) and Increment = 21, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_19;
+
+
 begin
    Put_Line ("********* Batch Tests *********");
    --     Test_1;
@@ -228,5 +253,7 @@ begin
    --     Test_15;
    --     Test_16;
    --     Test_17;
+   --Test_18;
+   Test_19;
 
 end Test_P3_1;

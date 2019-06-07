@@ -6,7 +6,19 @@ with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
 package body P3_1 with SPARK_Mode => On is
    
    -- Procedimientos
-
+   
+   procedure Search_And_Increment (number: Integer) is
+      i : Integer := 0;
+   begin
+      while i <= Global_Vector'Length-1 loop
+         if Global_Vector(i) = number then
+            Global_Vector(i) := number + Increment;
+            Increment := Increment + number;
+         end if;
+         i := i +1;
+      end loop;
+   end Search_And_Increment;
+   
    procedure getQuadraticEquation (A, B, C : Float;  R1, R2  : out Float) is
       Z: Float := B * B - 4.0 * A * C;
    begin
