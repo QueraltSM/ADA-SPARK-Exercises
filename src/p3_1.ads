@@ -8,16 +8,19 @@ package P3_1 with SPARK_Mode => ON is
    Global_Vector :  Vector := (-1,-1,-1,-1,-1);
    Global_Inverse_Vector : Vector := (-3, 5, 9, 0, 22);
 
+   procedure getQuadraticEquation (A, B, C : Float; R1, R2  : out Float) with
+     Global => null;
+
    procedure inverseVector with
      Global => null;
 
    procedure multiplyVectors (vec1, vec2 : Vector) with
      Global => (Input => Global_Vector);
---       Depends => (
---                     Global_Vector => (vec1, vec2)),
---       Pre => vec1'Length > 0 and vec2'Length > 0,
---       Post => (for all K in vec1'Range =>
---                  (Global_Vector(K) = Global_Vector(K)*vec1(K)*vec2(K)));
+   --       Depends => (
+   --                     Global_Vector => (vec1, vec2)),
+   --       Pre => vec1'Length > 0 and vec2'Length > 0,
+   --       Post => (for all K in vec1'Range =>
+   --                  (Global_Vector(K) = Global_Vector(K)*vec1(K)*vec2(K)));
 
 
    -- Funciones

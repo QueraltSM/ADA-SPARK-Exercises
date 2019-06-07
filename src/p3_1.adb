@@ -1,11 +1,26 @@
 with P3_1; use P3_1;
 with Ada.Text_IO; use Ada.Text_IO; 
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO; 
+with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
 
 package body P3_1 with SPARK_Mode => On is
    
    -- Procedimientos
 
+   procedure getQuadraticEquation (A, B, C : Float;  R1, R2  : out Float) is
+      Z: Float := B * B - 4.0 * A * C;
+   begin
+      if Z < 0.0 or A = 0.0 then
+         R1 := -1.0;
+         R2 := -1.0;
+         return;
+      else
+         R1 := (-B + SQRT (Z)) / (2.0*A); -- Positive root
+         R2 := (-B - SQRT (Z)) / (2.0*A); -- Negative root
+      end if;
+   end getQuadraticEquation;
+   
+   
    procedure inverseVector is 
       i : Integer := 0;
       j : Integer := Global_Inverse_Vector'Length-1;

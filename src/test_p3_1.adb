@@ -116,7 +116,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_10;
 
-         procedure Test_11 is
+   procedure Test_11 is
       Msg   : constant String := "Test_11: getMaxCount I";
    begin
       Assert_True(getMaxCount((2,-5,10),(1 => 1)) = 1, Msg);
@@ -128,7 +128,7 @@ procedure Test_P3_1 is
    end Test_11;
 
 
-         procedure Test_12 is
+   procedure Test_12 is
       Msg   : constant String := "Test_12: getMaxCount I";
       empty_Array : Vector (1..0) := (others => 0);
    begin
@@ -144,7 +144,7 @@ procedure Test_P3_1 is
 
    -- Tests procedimientos
 
-      procedure Test_13 is
+   procedure Test_13 is
       Msg   : constant String := "Test_13: multiplyVectors I";
    begin
       multiplyVectors((1,2),(2,1));
@@ -156,7 +156,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_13;
 
-         procedure Test_14 is
+   procedure Test_14 is
       Msg   : constant String := "Test_14: multiplyVectors II";
    begin
       multiplyVectors((3,-2,1),(2,2,-5));
@@ -168,7 +168,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_14;
 
-            procedure Test_15 is
+   procedure Test_15 is
       Msg   : constant String := "Test_15: inverseVector I";
    begin
       inverseVector;
@@ -180,23 +180,53 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_15;
 
+   procedure Test_16 is
+      Msg   : constant String := "Test_16: getQuadraticEquation I";
+      R1 : Float;
+      R2: Float;
+   begin
+      getQuadraticEquation(1.0,-13.0,-30.0, R1, R2);
+      Assert_True(R1 = 15.0 and R2 = -2.0, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_16;
+
+   procedure Test_17 is
+      Msg   : constant String := "Test_17: getQuadraticEquation II";
+      R1 : Float;
+      R2: Float;
+   begin
+      getQuadraticEquation(3.0,2.0,7.0, R1, R2);
+      Assert_True(R1 = -1.0 and R2 = -1.0, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_17;
+
 
 begin
    Put_Line ("********* Batch Tests *********");
---     Test_1;
---     Test_2;
---     Test_3;
---     Test_4;
---     Test_5;
---     Test_6;
---     Test_7;
---     Test_8;
---     Test_9;
---     Test_10;
-   Test_11;
-   Test_12;
-   Test_13;
-   Test_14;
-   Test_15;
+   --     Test_1;
+   --     Test_2;
+   --     Test_3;
+   --     Test_4;
+   --     Test_5;
+   --     Test_6;
+   --     Test_7;
+   --     Test_8;
+   --     Test_9;
+   --     Test_10;
+   --     Test_11;
+   --     Test_12;
+   --     Test_13;
+   --     Test_14;
+   --     Test_15;
+   --     Test_16;
+   --     Test_17;
 
 end Test_P3_1;
