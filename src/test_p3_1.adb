@@ -4,7 +4,7 @@ with P3_1;         use P3_1;
 
 procedure Test_P3_1 is
 
-   -- Tests funciones
+   --Tests for functions
 
    procedure Test_1 is
       Msg   : constant String := "Test_1: Compare two equal strings";
@@ -95,7 +95,7 @@ procedure Test_P3_1 is
    end Test_8;
 
    procedure Test_9 is
-      Msg   : constant String := "Test_17: Get_Bood_Pressure_Degree I";
+      Msg   : constant String := "Test_9: Get_Bood_Pressure_Degree I";
    begin
       Assert_True(Get_Bood_Pressure_Degree(85,72)="Normal", Msg);
    exception
@@ -106,7 +106,7 @@ procedure Test_P3_1 is
    end Test_9;
 
    procedure Test_10 is
-      Msg   : constant String := "Test_18: Get_Bood_Pressure_Degree II";
+      Msg   : constant String := "Test_10: Get_Bood_Pressure_Degree II";
    begin
       Assert_True(Get_Bood_Pressure_Degree(136,72)="Prehypertension", Msg);
    exception
@@ -142,7 +142,7 @@ procedure Test_P3_1 is
 
 
 
-   -- Tests procedimientos
+   -- Tests for procedures
 
    procedure Test_13 is
       Msg   : constant String := "Test_13: multiplyVectors I";
@@ -208,12 +208,11 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_17;
 
-
    procedure Test_18 is
       Msg   : constant String := "Test_18: Search_And_Increment I";
    begin
-      Search_And_Increment(5);
-      Assert_True(Global_Vector = (-1,-1,6,-1,-1) and Increment = 6, Msg);
+      Search_And_Increment(5); -- Global_Vector after Test_14: (-12,8,5,-1,-1) and Increment = 1
+      Assert_True(Global_Vector = (-12,8,6,-1,-1) and Increment = 6, Msg);
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -221,11 +220,11 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_18;
 
-      procedure Test_19 is
+   procedure Test_19 is
       Msg   : constant String := "Test_19: Search_And_Increment II";
    begin
-      Search_And_Increment(10);
-      Assert_True(Global_Vector = (-1,-1,5,11,21) and Increment=3, Msg);
+      Search_And_Increment(-1); -- Global_Vector after Test_18: (-12,8,6,-1,-1) and Increment = 6
+      Assert_True(Global_Vector = (-12,8,6,5,4) and Increment=4, Msg);
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -233,7 +232,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_19;
 
-       procedure Test_20 is
+   procedure Test_20 is
       Msg   : constant String := "Test_20: Is_Palindrome I";
       Number : Integer := 4554;
       Palindrome : Boolean;
@@ -247,7 +246,7 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_20;
 
-          procedure Test_21 is
+   procedure Test_21 is
       Msg   : constant String := "Test_21: Is_Palindrome II";
       Number : Integer := 123456;
       Palindrome : Boolean;
@@ -263,25 +262,25 @@ procedure Test_P3_1 is
 
 begin
    Put_Line ("********* Batch Tests *********");
-   --     Test_1;
-   --     Test_2;
-   --     Test_3;
-   --     Test_4;
-   --     Test_5;
-   --     Test_6;
-   --     Test_7;
-   --     Test_8;
-   --     Test_9;
-   --     Test_10;
-   --     Test_11;
-   --     Test_12;
-   --     Test_13;
-   --     Test_14;
-   --     Test_15;
-   --     Test_16;
-   --     Test_17;
-   --Test_18;
-  -- Test_19;
+   Test_1;
+   Test_2;
+   Test_3;
+   Test_4;
+   Test_5;
+   Test_6;
+   Test_7;
+   Test_8;
+   Test_9;
+   Test_10;
+   Test_11;
+   Test_12;
+   Test_13;
+   Test_14;
+   Test_15;
+   Test_16;
+   Test_17;
+   Test_18;
+   Test_19;
    Test_20;
    Test_21;
 end Test_P3_1;

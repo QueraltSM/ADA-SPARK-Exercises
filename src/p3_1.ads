@@ -2,12 +2,11 @@ package P3_1 with SPARK_Mode => ON is
    Max : constant := 1000;
    type Vector is array(Natural range <>) of Integer;
 
-
-   -- Procedimientos
-
-   Global_Vector :  Vector := (-1,-1,5,10,10);
+   Global_Vector :  Vector := (-1,-1,-1,-1,-1);
    Global_Inverse_Vector : Vector := (-3, 5, 9, 0, 22);
    Increment : Integer := 1;
+
+   -- Procedures
 
    procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) with
      Global => null;
@@ -23,14 +22,9 @@ package P3_1 with SPARK_Mode => ON is
 
    procedure multiplyVectors (vec1, vec2 : Vector) with
      Global => (Input => Global_Vector);
-   --       Depends => (
-   --                     Global_Vector => (vec1, vec2)),
-   --       Pre => vec1'Length > 0 and vec2'Length > 0,
-   --       Post => (for all K in vec1'Range =>
-   --                  (Global_Vector(K) = Global_Vector(K)*vec1(K)*vec2(K)));
 
 
-   -- Funciones
+   -- Functions
 
    function getMaxCount(vec1, vec2: Vector) return Integer
      with Global => null;

@@ -20,7 +20,7 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U test_p3_1%b		test_p3_1.adb		6e7cc173 NE OO SU
+U test_p3_1%b		test_p3_1.adb		01ce0eb9 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -37,7 +37,7 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D p3_1.ads		20190607183216 24e232bb p3_1%s
+D p3_1.ads		20190607184254 567df807 p3_1%s
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
@@ -52,7 +52,7 @@ D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
 D test_assertions.ads	20190606094810 c1dd7c95 test_assertions%s
-D test_p3_1.adb		20190607183318 035e3c07 test_p3_1%b
+D test_p3_1.adb		20190607184834 1e733971 test_p3_1%b
 X 1 ada.ads
 16K9*Ada 20e8 25|1r6 1r28
 X 6 a-textio.ads
@@ -60,82 +60,82 @@ X 6 a-textio.ads
 263U14*Put_Line 25|15s10 17s10 26s10 28s10 37s10 39s10 48s10 50s10 59s10
 . 61s10 70s10 72s10 81s10 83s10 92s10 94s10 103s10 105s10 114s10 116s10 125s10
 . 127s10 138s10 140s10 154s10 156s10 166s10 168s10 178s10 180s10 192s10 194s10
-. 206s10 208s10 219s10 221s10 231s10 233s10 245s10 247s10 259s10 261s10 265s4
+. 206s10 208s10 218s10 220s10 230s10 232s10 244s10 246s10 258s10 260s10 264s4
 X 10 p3_1.ads
-1K9*P3_1 80e9 25|3w6 3r24
+1K9*P3_1 74e9 25|3w6 3r24
 3A9*Vector(integer)<integer> 25|133r21
-8a4*Global_Vector{3A9} 25|151r19 163r19 216r19 228r19
-9a4*Global_Inverse_Vector{3A9} 25|175r19
-10i4*Increment{integer} 25|216r55 228r55
-12U14*Is_Palindrome 25|241s7 255s7
-15U14*Search_And_Increment 25|215s7 227s7
-18U14*getQuadraticEquation 25|188s7 202s7
-21U14*inverseVector 25|174s7
-24U14*multiplyVectors 25|150s7 162s7
-35V13*getMaxCount{integer} 25|122s19 135s19
-38V13*Get_Bood_Pressure_Degree{string} 25|100s19 111s19
-56V13*Compare_To{boolean} 25|12s20 23s21
-61V13*Delete_Elements{3A9} 25|67s19 78s19 89s19
-70V13*Count_Lower_Elements{natural} 25|34s19 45s19 56s19
+5a4*Global_Vector{3A9} 25|151r19 163r19 215r19 227r19
+6a4*Global_Inverse_Vector{3A9} 25|175r19
+7i4*Increment{integer} 25|215r55 227r53
+11U14*Is_Palindrome 25|240s7 254s7
+14U14*Search_And_Increment 25|214s7 226s7
+17U14*getQuadraticEquation 25|188s7 202s7
+20U14*inverseVector 25|174s7
+23U14*multiplyVectors 25|150s7 162s7
+29V13*getMaxCount{integer} 25|122s19 135s19
+32V13*Get_Bood_Pressure_Degree{string} 25|100s19 111s19
+50V13*Compare_To{boolean} 25|12s20 23s21
+55V13*Delete_Elements{3A9} 25|67s19 78s19 89s19
+64V13*Count_Lower_Elements{natural} 25|34s19 45s19 56s19
 X 24 test_assertions.ads
 1K9*Test_Assertions 15e20 25|2w6 2r28
 2X4*Assertion_Error 25|14r12 25r12 36r12 47r12 58r12 69r12 80r12 91r12 102r12
-. 113r12 124r12 137r12 153r12 165r12 177r12 191r12 205r12 218r12 230r12 244r12
-. 258r12
+. 113r12 124r12 137r12 153r12 165r12 177r12 191r12 205r12 217r12 229r12 243r12
+. 257r12
 10U14*Assert_True 25|12s7 34s7 45s7 56s7 67s7 78s7 89s7 100s7 111s7 122s7
-. 135s7 151s7 163s7 175s7 189s7 203s7 216s7 228s7 242s7 256s7
+. 135s7 151s7 163s7 175s7 189s7 203s7 215s7 227s7 241s7 255s7
 13U14*Assert_False 25|23s7
 X 25 test_p3_1.adb
-5U11*Test_P3_1 5b11 287l5 287t14
-9U14 Test_1 9b14 18l8 18t14
+5U11*Test_P3_1 5b11 286l5 286t14
+9U14 Test_1 9b14 18l8 18t14 265s4
 10a7 Msg{string} 12r71 15r20 17r20
-20U14 Test_2 20b14 29l8 29t14
+20U14 Test_2 20b14 29l8 29t14 266s4
 21a7 Msg{string} 23r62 26r20 28r20
-31U14 Test_3 31b14 40l8 40t14
+31U14 Test_3 31b14 40l8 40t14 267s4
 32a7 Msg{string} 34r54 37r20 39r20
-42U14 Test_4 42b14 51l8 51t14
+42U14 Test_4 42b14 51l8 51t14 268s4
 43a7 Msg{string} 45r58 48r20 50r20
-53U14 Test_5 53b14 62l8 62t14
+53U14 Test_5 53b14 62l8 62t14 269s4
 54a7 Msg{string} 56r70 59r20 61r20
-64U14 Test_6 64b14 73l8 73t14
+64U14 Test_6 64b14 73l8 73t14 270s4
 65a7 Msg{string} 67r65 70r20 72r20
-75U14 Test_7 75b14 84l8 84t14
+75U14 Test_7 75b14 84l8 84t14 271s4
 76a7 Msg{string} 78r60 81r20 83r20
-86U14 Test_8 86b14 95l8 95t14
+86U14 Test_8 86b14 95l8 95t14 272s4
 87a7 Msg{string} 89r62 92r20 94r20
-97U14 Test_9 97b14 106l8 106t14
+97U14 Test_9 97b14 106l8 106t14 273s4
 98a7 Msg{string} 100r61 103r20 105r20
-108U14 Test_10 108b14 117l8 117t15
+108U14 Test_10 108b14 117l8 117t15 274s4
 109a7 Msg{string} 111r71 114r20 116r20
-119U14 Test_11 119b14 128l8 128t15
+119U14 Test_11 119b14 128l8 128t15 275s4
 120a7 Msg{string} 122r56 125r20 127r20
-131U14 Test_12 131b14 141l8 141t15
+131U14 Test_12 131b14 141l8 141t15 276s4
 132a7 Msg{string} 135r58 138r20 140r20
 133a7 empty_Array{10|3A9} 135r31
-147U14 Test_13 147b14 157l8 157t15
+147U14 Test_13 147b14 157l8 157t15 277s4
 148a7 Msg{string} 151r53 154r20 156r20
-159U14 Test_14 159b14 169l8 169t15
+159U14 Test_14 159b14 169l8 169t15 278s4
 160a7 Msg{string} 163r52 166r20 168r20
-171U14 Test_15 171b14 181l8 181t15
+171U14 Test_15 171b14 181l8 181t15 279s4
 172a7 Msg{string} 175r62 178r20 180r20
-183U14 Test_16 183b14 195l8 195t15
+183U14 Test_16 183b14 195l8 195t15 280s4
 184a7 Msg{string} 189r44 192r20 194r20
 185f7 R1{float} 188m45 189r19
 186f7 R2{float} 188m49 189r33
-197U14 Test_17 197b14 209l8 209t15
+197U14 Test_17 197b14 209l8 209t15 281s4
 198a7 Msg{string} 203r44 206r20 208r20
 199f7 R1{float} 202m41 203r19
 200f7 R2{float} 202m45 203r33
-212U14 Test_18 212b14 222l8 222t15
-213a7 Msg{string} 216r70 219r20 221r20
-224U17 Test_19 224b17 234l8 234t15
-225a7 Msg{string} 228r68 231r20 233r20
-236U18 Test_20 236b18 248l8 248t15 285s4
-237a7 Msg{string} 242r38 245r20 247r20
-238i7 Number{integer} 241m21 241r21
-239b7 Palindrome{boolean} 241m29 242r19
-250U21 Test_21 250b21 262l8 262t15 286s4
-251a7 Msg{string} 256r39 259r20 261r20
-252i7 Number{integer} 255m21 255r21
-253b7 Palindrome{boolean} 255m29 256r19
+211U14 Test_18 211b14 221l8 221t15 282s4
+212a7 Msg{string} 215r70 218r20 220r20
+223U14 Test_19 223b14 233l8 233t15 283s4
+224a7 Msg{string} 227r66 230r20 232r20
+235U14 Test_20 235b14 247l8 247t15 284s4
+236a7 Msg{string} 241r38 244r20 246r20
+237i7 Number{integer} 240m21 240r21
+238b7 Palindrome{boolean} 240m29 241r19
+249U14 Test_21 249b14 261l8 261t15 285s4
+250a7 Msg{string} 255r39 258r20 260r20
+251i7 Number{integer} 254m21 254r21
+252b7 Palindrome{boolean} 254m29 255r19
 

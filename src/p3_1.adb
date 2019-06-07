@@ -5,7 +5,7 @@ with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
 
 package body P3_1 with SPARK_Mode => On is
    
-   -- Procedimientos
+   -- Procedures
    
    procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) is
       r: Integer := 0;
@@ -80,7 +80,7 @@ package body P3_1 with SPARK_Mode => On is
    end multiplyVectors;
    
    
-   -- Funciones
+   -- Functions
    
    function getMaxCount (vec1, vec2: Vector) return Integer is
    begin
