@@ -6,7 +6,10 @@ package P3_1 with SPARK_Mode => ON is
    -- Procedimientos
 
    Global_Vector :  Vector := (-1,-1,-1,-1,-1);
+   Global_Inverse_Vector : Vector := (-3, 5, 9, 0, 22);
 
+   procedure inverseVector with
+     Global => null;
 
    procedure multiplyVectors (vec1, vec2 : Vector) with
      Global => (Input => Global_Vector);

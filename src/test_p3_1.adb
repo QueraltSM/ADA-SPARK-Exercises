@@ -168,6 +168,18 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_14;
 
+            procedure Test_15 is
+      Msg   : constant String := "Test_15: inverseVector I";
+   begin
+      inverseVector;
+      Assert_True(Global_Inverse_Vector = (22, 0, 9, 5, -3), Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_15;
+
 
 begin
    Put_Line ("********* Batch Tests *********");
@@ -185,4 +197,6 @@ begin
    Test_12;
    Test_13;
    Test_14;
+   Test_15;
+
 end Test_P3_1;

@@ -5,6 +5,21 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 package body P3_1 with SPARK_Mode => On is
    
    -- Procedimientos
+
+   procedure inverseVector is 
+      i : Integer := 0;
+      j : Integer := Global_Inverse_Vector'Length-1;
+      temp: Integer;
+   begin
+      while i < j loop
+         temp := Global_Inverse_Vector(i);
+         Global_Inverse_Vector(i) := Global_Inverse_Vector(j);
+         Global_Inverse_Vector(j) := temp;
+         i := i + 1;
+         j := j - 1;
+      end loop;
+      
+   end inverseVector;
    
    procedure multiplyVectors (vec1, vec2 : Vector) is
       count : Integer := getMaxCount(vec1,vec2);

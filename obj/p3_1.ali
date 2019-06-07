@@ -20,7 +20,7 @@ RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U p3_1%b		p3_1.adb		0cd12caa NE OO PK
+U p3_1%b		p3_1.adb		b830e9ae NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
@@ -30,7 +30,7 @@ W p3_1%s		p3_1.adb		p3_1.ali
 Z system.assertions%s	s-assert.adb		s-assert.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U p3_1%s		p3_1.ads		8ba5f1a9 EE NE OO PK
+U p3_1%s		p3_1.ads		70464b22 EE NE OO PK
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-except.ads		20180524051736 291912d5 ada.exceptions%s
@@ -43,8 +43,8 @@ D a-tiinio.ads		20180524051736 aa04e5d6 ada.text_io.integer_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D p3_1.ads		20190607120910 8ba5f1a9 p3_1%s
-D p3_1.adb		20190607124732 72871654 p3_1%b
+D p3_1.ads		20190607155918 70464b22 p3_1%s
+D p3_1.adb		20190607161616 c666d350 p3_1%b
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
@@ -66,49 +66,54 @@ X 3 a-inteio.ads
 X 7 a-textio.ads
 49K13*Text_IO 471e16 13|2w10 2r27
 X 12 p3_1.ads
-1K9*P3_1 67l5 67e9 13|1w6 1r16 5b14 96l5 96t9
-2N4*Max 51r30 60r30
-3A9*Vector(integer)<integer> 8r21 11r44 22r37 48r39 48r71 57r44 13|9r44 24r38
-. 55r39 55r71 56r20 80r44
-8a4*Global_Vector{3A9} 12r26 13|16m10 16r46
-11U14*multiplyVectors 11>31 11>37 13|9b14 19l8 19t23
-11a31 vec1{3A9} 13|9b31 10r38 16r30
-11a37 vec2{3A9} 13|9b37 10r43 16r38
-22V13*getMaxCount{integer} 22>25 22>31 13|10s26 24b13 30l8 30t19
-22a25 vec1{3A9} 13|24b26 26r10 27r17
-22a31 vec2{3A9} 13|24b32 26r25 29r14
-25V13*Get_Bood_Pressure_Degree{string} 25>38 25>48 27r18 30r17 32r24 34r27
-. 36r30 38r33 40r36 41r43 13|32b13 48l8 48t32
-25i38 systolic{integer} 27r54 28r13 28r30 29r18 31r23 31r41 33r27 33r46 35r30
-. 35r49 37r32 39r35 13|32b39 34r10 36r13 36r31 38r14 38r33 40r14 40r33 42r13
-. 44r13
-25i48 diastolic{integer} 27r64 28r58 28r76 29r35 31r60 31r79 33r66 33r85
-. 35r69 35r88 37r50 39r53 13|32b49 34r27 36r50 36r69 38r53 38r72 40r53 40r72
-. 42r31 44r31
-43V13*Compare_To{boolean} 43>25 43>34 45r18 46r14 13|50b13 53l8 53t18
-43a25 String1{string} 45r40 46r35 13|50b25 52r14
-43a34 String2{string} 45r48 46r45 13|50b34 52r22
-48V13*Delete_Elements{3A9} 48>30 48>47 50r18 52r18 54r10 13|55b13 78l8 78t23
-48a30 Vector1{3A9} 50r45 51r13 51r43 53r31 53r48 55r24 55r41 13|55b30 56r53
-. 62r16 63r13 64r30 70r64 73r30 73r50 75r29 75r49
-48i47 Number{integer} 50r54 53r61 55r55 13|55b47 56r62 63r27 73r64 75r62
-53i26 K{integer} 53r56
-55i19 K{integer} 55r49
-57V13*Count_Lower_Elements{natural} 57>34 57>52 59r18 61r42 62r10 13|56s32
-. 80b13 95l8 95t28
-57a34 Vector1{3A9} 59r50 60r13 60r43 61r18 63r24 63r41 65r23 65r40 13|80b34
-. 81r22 84r16 85r13 89r37 89r52 91r44
-57i52 Number{integer} 59r59 63r52 65r52 13|80b52 85r24
-63i19 K{integer} 63r49
-65i18 X{integer} 65r48
+1K9*P3_1 70l5 70e9 13|1w6 1r16 5b14 111l5 111t9
+2N4*Max 54r30 63r30
+3A9*Vector(integer)<integer> 8r21 9r28 14r44 25r37 51r39 51r71 60r44 13|24r44
+. 39r38 70r39 70r71 71r20 95r44
+8a4*Global_Vector{3A9} 15r26 13|31m10 31r46
+9a4*Global_Inverse_Vector{3A9} 13|11r22 15r18 16m10 16r38 17m10
+11U14*inverseVector 13|9b14 22l8 22t21
+14U14*multiplyVectors 14>31 14>37 13|24b14 34l8 34t23
+14a31 vec1{3A9} 13|24b31 25r38 31r30
+14a37 vec2{3A9} 13|24b37 25r43 31r38
+25V13*getMaxCount{integer} 25>25 25>31 13|25s26 39b13 45l8 45t19
+25a25 vec1{3A9} 13|39b26 41r10 42r17
+25a31 vec2{3A9} 13|39b32 41r25 44r14
+28V13*Get_Bood_Pressure_Degree{string} 28>38 28>48 30r18 33r17 35r24 37r27
+. 39r30 41r33 43r36 44r43 13|47b13 63l8 63t32
+28i38 systolic{integer} 30r54 31r13 31r30 32r18 34r23 34r41 36r27 36r46 38r30
+. 38r49 40r32 42r35 13|47b39 49r10 51r13 51r31 53r14 53r33 55r14 55r33 57r13
+. 59r13
+28i48 diastolic{integer} 30r64 31r58 31r76 32r35 34r60 34r79 36r66 36r85
+. 38r69 38r88 40r50 42r53 13|47b49 49r27 51r50 51r69 53r53 53r72 55r53 55r72
+. 57r31 59r31
+46V13*Compare_To{boolean} 46>25 46>34 48r18 49r14 13|65b13 68l8 68t18
+46a25 String1{string} 48r40 49r35 13|65b25 67r14
+46a34 String2{string} 48r48 49r45 13|65b34 67r22
+51V13*Delete_Elements{3A9} 51>30 51>47 53r18 55r18 57r10 13|70b13 93l8 93t23
+51a30 Vector1{3A9} 53r45 54r13 54r43 56r31 56r48 58r24 58r41 13|70b30 71r53
+. 77r16 78r13 79r30 85r64 88r30 88r50 90r29 90r49
+51i47 Number{integer} 53r54 56r61 58r55 13|70b47 71r62 78r27 88r64 90r62
+56i26 K{integer} 56r56
+58i19 K{integer} 58r49
+60V13*Count_Lower_Elements{natural} 60>34 60>52 62r18 64r42 65r10 13|71s32
+. 95b13 110l8 110t28
+60a34 Vector1{3A9} 62r50 63r13 63r43 64r18 66r24 66r41 68r23 68r40 13|95b34
+. 96r22 99r16 100r13 104r37 104r52 106r44
+60i52 Number{integer} 62r59 66r52 68r52 13|95b52 100r24
+66i19 K{integer} 66r49
+68i18 X{integer} 68r48
 X 13 p3_1.adb
-10i7 count{integer} 12r19
-12i11 i{integer} 16r24 16r35 16r43 16r60
-56a7 Aux_Vector{12|3A9} 59r10 64m13 66r20 67r23 70r38 77r14
-57i7 j{natural} 64r24 65m13 65r18 66r16 70r33 72r16
-62i11 i{integer} 63r21 64r38 70r59 73r45 75r44
-73i25 K{integer} 73r58
-75i24 K{integer} 75r57
-81i7 i{natural} 84r13 85r21 88r43 89r32 90r44 91r42 92m10 92r15
-82i7 Count{natural} 86m13 86r22 90r32 91r32 94r14
+10i7 i{integer} 14r13 15r40 16r32 18m10 18r15
+11i7 j{integer} 14r17 16r60 17r32 19m10 19r15
+12i7 temp{integer} 15m10 17r38
+25i7 count{integer} 27r19
+27i11 i{integer} 31r24 31r35 31r43 31r60
+71a7 Aux_Vector{12|3A9} 74r10 79m13 81r20 82r23 85r38 92r14
+72i7 j{natural} 79r24 80m13 80r18 81r16 85r33 87r16
+77i11 i{integer} 78r21 79r38 85r59 88r45 90r44
+88i25 K{integer} 88r58
+90i24 K{integer} 90r57
+96i7 i{natural} 99r13 100r21 103r43 104r32 105r44 106r42 107m10 107r15
+97i7 Count{natural} 101m13 101r22 105r32 106r32 109r14
 
