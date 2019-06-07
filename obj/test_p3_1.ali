@@ -20,7 +20,7 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U test_p3_1%b		test_p3_1.adb		e102c31d NE OO SU
+U test_p3_1%b		test_p3_1.adb		6e7cc173 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -37,7 +37,7 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D p3_1.ads		20190607180800 6a954d41 p3_1%s
+D p3_1.ads		20190607183216 24e232bb p3_1%s
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
@@ -52,7 +52,7 @@ D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
 D test_assertions.ads	20190606094810 c1dd7c95 test_assertions%s
-D test_p3_1.adb		20190607181458 c2574193 test_p3_1%b
+D test_p3_1.adb		20190607183318 035e3c07 test_p3_1%b
 X 1 ada.ads
 16K9*Ada 20e8 25|1r6 1r28
 X 6 a-textio.ads
@@ -60,31 +60,33 @@ X 6 a-textio.ads
 263U14*Put_Line 25|15s10 17s10 26s10 28s10 37s10 39s10 48s10 50s10 59s10
 . 61s10 70s10 72s10 81s10 83s10 92s10 94s10 103s10 105s10 114s10 116s10 125s10
 . 127s10 138s10 140s10 154s10 156s10 166s10 168s10 178s10 180s10 192s10 194s10
-. 206s10 208s10 219s10 221s10 231s10 233s10 238s4
+. 206s10 208s10 219s10 221s10 231s10 233s10 245s10 247s10 259s10 261s10 265s4
 X 10 p3_1.ads
-1K9*P3_1 77e9 25|3w6 3r24
+1K9*P3_1 80e9 25|3w6 3r24
 3A9*Vector(integer)<integer> 25|133r21
 8a4*Global_Vector{3A9} 25|151r19 163r19 216r19 228r19
 9a4*Global_Inverse_Vector{3A9} 25|175r19
 10i4*Increment{integer} 25|216r55 228r55
-12U14*Search_And_Increment 25|215s7 227s7
-15U14*getQuadraticEquation 25|188s7 202s7
-18U14*inverseVector 25|174s7
-21U14*multiplyVectors 25|150s7 162s7
-32V13*getMaxCount{integer} 25|122s19 135s19
-35V13*Get_Bood_Pressure_Degree{string} 25|100s19 111s19
-53V13*Compare_To{boolean} 25|12s20 23s21
-58V13*Delete_Elements{3A9} 25|67s19 78s19 89s19
-67V13*Count_Lower_Elements{natural} 25|34s19 45s19 56s19
+12U14*Is_Palindrome 25|241s7 255s7
+15U14*Search_And_Increment 25|215s7 227s7
+18U14*getQuadraticEquation 25|188s7 202s7
+21U14*inverseVector 25|174s7
+24U14*multiplyVectors 25|150s7 162s7
+35V13*getMaxCount{integer} 25|122s19 135s19
+38V13*Get_Bood_Pressure_Degree{string} 25|100s19 111s19
+56V13*Compare_To{boolean} 25|12s20 23s21
+61V13*Delete_Elements{3A9} 25|67s19 78s19 89s19
+70V13*Count_Lower_Elements{natural} 25|34s19 45s19 56s19
 X 24 test_assertions.ads
 1K9*Test_Assertions 15e20 25|2w6 2r28
 2X4*Assertion_Error 25|14r12 25r12 36r12 47r12 58r12 69r12 80r12 91r12 102r12
-. 113r12 124r12 137r12 153r12 165r12 177r12 191r12 205r12 218r12 230r12
+. 113r12 124r12 137r12 153r12 165r12 177r12 191r12 205r12 218r12 230r12 244r12
+. 258r12
 10U14*Assert_True 25|12s7 34s7 45s7 56s7 67s7 78s7 89s7 100s7 111s7 122s7
-. 135s7 151s7 163s7 175s7 189s7 203s7 216s7 228s7
+. 135s7 151s7 163s7 175s7 189s7 203s7 216s7 228s7 242s7 256s7
 13U14*Assert_False 25|23s7
 X 25 test_p3_1.adb
-5U11*Test_P3_1 5b11 259l5 259t14
+5U11*Test_P3_1 5b11 287l5 287t14
 9U14 Test_1 9b14 18l8 18t14
 10a7 Msg{string} 12r71 15r20 17r20
 20U14 Test_2 20b14 29l8 29t14
@@ -126,6 +128,14 @@ X 25 test_p3_1.adb
 200f7 R2{float} 202m45 203r33
 212U14 Test_18 212b14 222l8 222t15
 213a7 Msg{string} 216r70 219r20 221r20
-224U17 Test_19 224b17 234l8 234t15 257s4
-225a7 Msg{string} 228r71 231r20 233r20
+224U17 Test_19 224b17 234l8 234t15
+225a7 Msg{string} 228r68 231r20 233r20
+236U18 Test_20 236b18 248l8 248t15 285s4
+237a7 Msg{string} 242r38 245r20 247r20
+238i7 Number{integer} 241m21 241r21
+239b7 Palindrome{boolean} 241m29 242r19
+250U21 Test_21 250b21 262l8 262t15 286s4
+251a7 Msg{string} 256r39 259r20 261r20
+252i7 Number{integer} 255m21 255r21
+253b7 Palindrome{boolean} 255m29 256r19
 

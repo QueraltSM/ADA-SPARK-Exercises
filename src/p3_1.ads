@@ -9,6 +9,9 @@ package P3_1 with SPARK_Mode => ON is
    Global_Inverse_Vector : Vector := (-3, 5, 9, 0, 22);
    Increment : Integer := 1;
 
+   procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) with
+     Global => null;
+
    procedure Search_And_Increment (number: Integer) with
      Global => null;
 

@@ -225,7 +225,7 @@ procedure Test_P3_1 is
       Msg   : constant String := "Test_19: Search_And_Increment II";
    begin
       Search_And_Increment(10);
-      Assert_True(Global_Vector = (-1,-1,5,11,21) and Increment = 21, Msg);
+      Assert_True(Global_Vector = (-1,-1,5,11,21) and Increment=3, Msg);
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -233,6 +233,33 @@ procedure Test_P3_1 is
          Put_Line (Msg & " Failed (exception)");
    end Test_19;
 
+       procedure Test_20 is
+      Msg   : constant String := "Test_20: Is_Palindrome I";
+      Number : Integer := 4554;
+      Palindrome : Boolean;
+   begin
+      Is_Palindrome(Number, Palindrome);
+      Assert_True(Palindrome = True, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_20;
+
+          procedure Test_21 is
+      Msg   : constant String := "Test_21: Is_Palindrome II";
+      Number : Integer := 123456;
+      Palindrome : Boolean;
+   begin
+      Is_Palindrome(Number, Palindrome);
+      Assert_True(Palindrome = False, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_21;
 
 begin
    Put_Line ("********* Batch Tests *********");
@@ -254,6 +281,7 @@ begin
    --     Test_16;
    --     Test_17;
    --Test_18;
-   Test_19;
-
+  -- Test_19;
+   Test_20;
+   Test_21;
 end Test_P3_1;

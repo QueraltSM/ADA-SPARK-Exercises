@@ -7,6 +7,25 @@ package body P3_1 with SPARK_Mode => On is
    
    -- Procedimientos
    
+   procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) is
+      r: Integer := 0;
+      sum: Integer := 0;
+      temp : Integer := number;
+   begin
+      while number>0 loop
+         r := number mod 10;
+         sum := (sum*10)+r;
+         number := number/10;
+      end loop;
+      
+      if temp = sum then
+         palindrome := True;
+      else 
+         palindrome := False;
+      end if;
+      
+   end Is_Palindrome;
+   
    procedure Search_And_Increment (number: Integer) is
       i : Integer := 0;
    begin
