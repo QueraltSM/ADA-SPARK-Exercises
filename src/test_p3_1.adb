@@ -117,9 +117,9 @@ procedure Test_P3_1 is
    end Test_10;
 
    procedure Test_11 is
-      Msg   : constant String := "Test_11: getMaxCount I";
+      Msg   : constant String := "Test_11: Get_Max_Count I";
    begin
-      Assert_True(getMaxCount((2,-5,10),(1 => 1)) = 1, Msg);
+      Assert_True(Get_Max_Count((2,-5,10),(1 => 1)) = 1, Msg);
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -129,10 +129,10 @@ procedure Test_P3_1 is
 
 
    procedure Test_12 is
-      Msg   : constant String := "Test_12: getMaxCount I";
+      Msg   : constant String := "Test_12: Get_Max_Count II";
       empty_Array : Vector (1..0) := (others => 0);
    begin
-      Assert_True(getMaxCount(empty_Array,(1,2,-4)) = 0, Msg);
+      Assert_True(Get_Max_Count(empty_Array,(1,2,-4)) = 0, Msg);
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -145,9 +145,9 @@ procedure Test_P3_1 is
    -- Tests for procedures
 
    procedure Test_13 is
-      Msg   : constant String := "Test_13: multiplyVectors I";
+      Msg   : constant String := "Test_13: Multiply_Vectors I";
    begin
-      multiplyVectors((1,2),(2,1));
+      Multiply_Vectors((1,2),(2,1));
       Assert_True(Global_Vector = (-2,-2,-1,-1,-1), Msg);
    exception
       when Assertion_Error =>
@@ -157,9 +157,9 @@ procedure Test_P3_1 is
    end Test_13;
 
    procedure Test_14 is
-      Msg   : constant String := "Test_14: multiplyVectors II";
+      Msg   : constant String := "Test_14: Multiply_Vectors II";
    begin
-      multiplyVectors((3,-2,1),(2,2,-5));
+      Multiply_Vectors((3,-2,1),(2,2,-5));
       Assert_True(Global_Vector = (-12,8,5,-1,-1), Msg);
    exception
       when Assertion_Error =>
@@ -169,9 +169,9 @@ procedure Test_P3_1 is
    end Test_14;
 
    procedure Test_15 is
-      Msg   : constant String := "Test_15: inverseVector I";
+      Msg   : constant String := "Test_15: Inverse_Vector I";
    begin
-      inverseVector;
+      Inverse_Vector;
       Assert_True(Global_Inverse_Vector = (22, 0, 9, 5, -3), Msg);
    exception
       when Assertion_Error =>
@@ -181,11 +181,11 @@ procedure Test_P3_1 is
    end Test_15;
 
    procedure Test_16 is
-      Msg   : constant String := "Test_16: getQuadraticEquation I";
+      Msg   : constant String := "Test_16: Resolve_Quadratic_Equation I";
       R1 : Float;
       R2: Float;
    begin
-      getQuadraticEquation(1.0,-13.0,-30.0, R1, R2);
+      Resolve_Quadratic_Equation(1.0,-13.0,-30.0, R1, R2);
       Assert_True(R1 = 15.0 and R2 = -2.0, Msg);
    exception
       when Assertion_Error =>
@@ -195,11 +195,11 @@ procedure Test_P3_1 is
    end Test_16;
 
    procedure Test_17 is
-      Msg   : constant String := "Test_17: getQuadraticEquation II";
+      Msg   : constant String := "Test_17: Resolve_Quadratic_Equation II";
       R1 : Float;
       R2: Float;
    begin
-      getQuadraticEquation(3.0,2.0,7.0, R1, R2);
+      Resolve_Quadratic_Equation(3.0,2.0,7.0, R1, R2);
       Assert_True(R1 = -1.0 and R2 = -1.0, Msg);
    exception
       when Assertion_Error =>

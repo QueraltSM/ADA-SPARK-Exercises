@@ -38,7 +38,7 @@ package body P3_1 with SPARK_Mode => On is
       end loop;
    end Search_And_Increment;
    
-   procedure getQuadraticEquation (A, B, C : Float;  R1, R2  : out Float) is
+   procedure Resolve_Quadratic_Equation (A, B, C : Float;  R1, R2  : out Float) is
       Z: Float := B * B - 4.0 * A * C;
    begin
       if Z < 0.0 or A = 0.0 then
@@ -49,10 +49,10 @@ package body P3_1 with SPARK_Mode => On is
          R1 := (-B + SQRT (Z)) / (2.0*A); -- Positive root
          R2 := (-B - SQRT (Z)) / (2.0*A); -- Negative root
       end if;
-   end getQuadraticEquation;
+   end Resolve_Quadratic_Equation;
    
    
-   procedure inverseVector is 
+   procedure Inverse_Vector is 
       i : Integer := 0;
       j : Integer := Global_Inverse_Vector'Length-1;
       temp: Integer;
@@ -64,31 +64,28 @@ package body P3_1 with SPARK_Mode => On is
          i := i + 1;
          j := j - 1;
       end loop;
-      
-   end inverseVector;
+   end Inverse_Vector;
    
-   procedure multiplyVectors (vec1, vec2 : Vector) is
-      count : Integer := getMaxCount(vec1,vec2);
+   procedure Multiply_Vectors (vec1, vec2 : Vector) is
+      count : Integer := Get_Max_Count(vec1,vec2);
    begin
       for i in 0..count-1 loop
          --pragma Loop_Invariant (i in 0..count-1);
          --pragma Loop_Invariant (for all K in 0..i =>(Global_Vector(K) = vec1(K)*vec2(K)*Global_Vector(K)));
-         
          Global_Vector(i) := vec1(i)*vec2(i)*Global_Vector(i);
-      
       end loop;
-   end multiplyVectors;
+   end Multiply_Vectors;
    
    
    -- Functions
    
-   function getMaxCount (vec1, vec2: Vector) return Integer is
+   function Get_Max_Count (vec1, vec2: Vector) return Integer is
    begin
       if vec1'Length <= vec2'Length then
          return vec1'Length;
       end if;
       return vec2'Length;
-   end getMaxCount;
+   end Get_Max_Count;
    
    function Get_Bood_Pressure_Degree (systolic, diastolic: Integer) return String is
    begin

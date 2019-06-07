@@ -14,19 +14,19 @@ package P3_1 with SPARK_Mode => ON is
    procedure Search_And_Increment (number: Integer) with
      Global => null;
 
-   procedure getQuadraticEquation (A, B, C : Float; R1, R2  : out Float) with
+   procedure Resolve_Quadratic_Equation (A, B, C : Float; R1, R2  : out Float) with
      Global => null;
 
-   procedure inverseVector with
+   procedure Inverse_Vector with
      Global => null;
 
-   procedure multiplyVectors (vec1, vec2 : Vector) with
+   procedure Multiply_Vectors (vec1, vec2 : Vector) with
      Global => (Input => Global_Vector);
 
 
    -- Functions
 
-   function getMaxCount(vec1, vec2: Vector) return Integer
+   function Get_Max_Count(vec1, vec2: Vector) return Integer
      with Global => null;
 
    function Get_Bood_Pressure_Degree(systolic, diastolic: Integer) return String
