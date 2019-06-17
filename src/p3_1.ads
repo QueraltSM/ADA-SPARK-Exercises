@@ -8,26 +8,29 @@ package P3_1 with SPARK_Mode => ON is
 
    -- Procedures
 
-   procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) with
-     Global => null;
-
-   procedure Search_And_Increment (number: Integer) with
-     Global => null;
-
-   procedure Resolve_Quadratic_Equation (A, B, C : Float; R1, R2  : out Float) with
-     Global => null;
-
-   procedure Inverse_Vector with
-     Global => null;
-
-   procedure Multiply_Vectors (vec1, vec2 : Vector) with
-     Global => (Input => Global_Vector);
+--     procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) with
+--       Global => null;
+--
+--     procedure Search_And_Increment (number: Integer) with
+--       Global => null;
+--
+--     procedure Resolve_Quadratic_Equation (A, B, C : Float; R1, R2  : out Float) with
+--       Global => null;
+--
+--     procedure Inverse_Vector with
+--       Global => null;
+--
+--     procedure Multiply_Vectors (vec1, vec2 : Vector) with
+--       Global => (Input => Global_Vector);
 
 
    -- Functions
 
    function Get_Max_Count(vec1, vec2: Vector) return Integer
-     with Global => null;
+     with Global => null,
+     Depends => (Get_Max_Count'Result => (vec1, vec2)),
+     Pre => (vec1'Length > 0 and vec2'Length > 0) and then (vec1'Length < Max and vec2'Length < Max),
+     Post => (if vec1'Length < vec2'Length then Get_Max_Count'Result = vec1'Length);
 
    function Get_Bood_Pressure_Degree(systolic, diastolic: Integer) return String
      with Global => null,

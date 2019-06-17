@@ -7,81 +7,81 @@ package body P3_1 with SPARK_Mode => On is
    
    -- Procedures
    
-   procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) is
-      r: Integer := 0;
-      sum: Integer := 0;
-      temp : Integer := number;
-   begin
-      while number>0 loop
-         r := number mod 10;
-         sum := (sum*10)+r;
-         number := number/10;
-      end loop;
-      
-      if temp = sum then
-         palindrome := True;
-      else 
-         palindrome := False;
-      end if;
-      
-   end Is_Palindrome;
-   
-   procedure Search_And_Increment (number: Integer) is
-      i : Integer := 0;
-   begin
-      while i <= Global_Vector'Length-1 loop
-         if Global_Vector(i) = number then
-            Global_Vector(i) := number + Increment;
-            Increment := Increment + number;
-         end if;
-         i := i +1;
-      end loop;
-   end Search_And_Increment;
-   
-   procedure Resolve_Quadratic_Equation (A, B, C : Float;  R1, R2  : out Float) is
-      Z: Float := B * B - 4.0 * A * C;
-   begin
-      if Z < 0.0 or A = 0.0 then
-         R1 := -1.0;
-         R2 := -1.0;
-         return;
-      else
-         R1 := (-B + SQRT (Z)) / (2.0*A); -- Positive root
-         R2 := (-B - SQRT (Z)) / (2.0*A); -- Negative root
-      end if;
-   end Resolve_Quadratic_Equation;
-   
-   
-   procedure Inverse_Vector is 
-      i : Integer := 0;
-      j : Integer := Global_Inverse_Vector'Length-1;
-      temp: Integer;
-   begin
-      while i < j loop
-         temp := Global_Inverse_Vector(i);
-         Global_Inverse_Vector(i) := Global_Inverse_Vector(j);
-         Global_Inverse_Vector(j) := temp;
-         i := i + 1;
-         j := j - 1;
-      end loop;
-   end Inverse_Vector;
-   
-   procedure Multiply_Vectors (vec1, vec2 : Vector) is
-      count : Integer := Get_Max_Count(vec1,vec2);
-   begin
-      for i in 0..count-1 loop
-         --pragma Loop_Invariant (i in 0..count-1);
-         --pragma Loop_Invariant (for all K in 0..i =>(Global_Vector(K) = vec1(K)*vec2(K)*Global_Vector(K)));
-         Global_Vector(i) := vec1(i)*vec2(i)*Global_Vector(i);
-      end loop;
-   end Multiply_Vectors;
+--     procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) is
+--        r: Integer := 0;
+--        sum: Integer := 0;
+--        temp : Integer := number;
+--     begin
+--        while number>0 loop
+--           r := number mod 10;
+--           sum := (sum*10)+r;
+--           number := number/10;
+--        end loop;
+--        
+--        if temp = sum then
+--           palindrome := True;
+--        else 
+--           palindrome := False;
+--        end if;
+--        
+--     end Is_Palindrome;
+--     
+--     procedure Search_And_Increment (number: Integer) is
+--        i : Integer := 0;
+--     begin
+--        while i <= Global_Vector'Length-1 loop
+--           if Global_Vector(i) = number then
+--              Global_Vector(i) := number + Increment;
+--              Increment := Increment + number;
+--           end if;
+--           i := i +1;
+--        end loop;
+--     end Search_And_Increment;
+--     
+--     procedure Resolve_Quadratic_Equation (A, B, C : Float;  R1, R2  : out Float) is
+--        Z: Float := B * B - 4.0 * A * C;
+--     begin
+--        if Z < 0.0 or A = 0.0 then
+--           R1 := -1.0;
+--           R2 := -1.0;
+--           return;
+--        else
+--           R1 := (-B + SQRT (Z)) / (2.0*A); -- Positive root
+--           R2 := (-B - SQRT (Z)) / (2.0*A); -- Negative root
+--        end if;
+--     end Resolve_Quadratic_Equation;
+--     
+--     
+--     procedure Inverse_Vector is 
+--        i : Integer := 0;
+--        j : Integer := Global_Inverse_Vector'Length-1;
+--        temp: Integer;
+--     begin
+--        while i < j loop
+--           temp := Global_Inverse_Vector(i);
+--           Global_Inverse_Vector(i) := Global_Inverse_Vector(j);
+--           Global_Inverse_Vector(j) := temp;
+--           i := i + 1;
+--           j := j - 1;
+--        end loop;
+--     end Inverse_Vector;
+--     
+--     procedure Multiply_Vectors (vec1, vec2 : Vector) is
+--        count : Integer := Get_Max_Count(vec1,vec2);
+--     begin
+--        for i in 0..count-1 loop
+--           --pragma Loop_Invariant (i in 0..count-1);
+--           --pragma Loop_Invariant (for all K in 0..i =>(Global_Vector(K) = vec1(K)*vec2(K)*Global_Vector(K)));
+--           Global_Vector(i) := vec1(i)*vec2(i)*Global_Vector(i);
+--        end loop;
+--     end Multiply_Vectors;
    
    
    -- Functions
    
    function Get_Max_Count (vec1, vec2: Vector) return Integer is
    begin
-      if vec1'Length <= vec2'Length then
+      if vec1'Length < vec2'Length then
          return vec1'Length;
       end if;
       return vec2'Length;

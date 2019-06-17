@@ -144,121 +144,121 @@ procedure Test_P3_1 is
 
    -- Tests for procedures
 
-   procedure Test_13 is
-      Msg   : constant String := "Test_13: Multiply_Vectors I";
-   begin
-      Multiply_Vectors((1,2),(2,1));
-      Assert_True(Global_Vector = (-2,-2,-1,-1,-1), Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_13;
-
-   procedure Test_14 is
-      Msg   : constant String := "Test_14: Multiply_Vectors II";
-   begin
-      Multiply_Vectors((3,-2,1),(2,2,-5));
-      Assert_True(Global_Vector = (-12,8,5,-1,-1), Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_14;
-
-   procedure Test_15 is
-      Msg   : constant String := "Test_15: Inverse_Vector I";
-   begin
-      Inverse_Vector;
-      Assert_True(Global_Inverse_Vector = (22, 0, 9, 5, -3), Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_15;
-
-   procedure Test_16 is
-      Msg   : constant String := "Test_16: Resolve_Quadratic_Equation I";
-      R1 : Float;
-      R2: Float;
-   begin
-      Resolve_Quadratic_Equation(1.0,-13.0,-30.0, R1, R2);
-      Assert_True(R1 = 15.0 and R2 = -2.0, Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_16;
-
-   procedure Test_17 is
-      Msg   : constant String := "Test_17: Resolve_Quadratic_Equation II";
-      R1 : Float;
-      R2: Float;
-   begin
-      Resolve_Quadratic_Equation(3.0,2.0,7.0, R1, R2);
-      Assert_True(R1 = -1.0 and R2 = -1.0, Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_17;
-
-   procedure Test_18 is
-      Msg   : constant String := "Test_18: Search_And_Increment I";
-   begin
-      Search_And_Increment(5); -- Global_Vector after Test_14: (-12,8,5,-1,-1) and Increment = 1
-      Assert_True(Global_Vector = (-12,8,6,-1,-1) and Increment = 6, Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_18;
-
-   procedure Test_19 is
-      Msg   : constant String := "Test_19: Search_And_Increment II";
-   begin
-      Search_And_Increment(-1); -- Global_Vector after Test_18: (-12,8,6,-1,-1) and Increment = 6
-      Assert_True(Global_Vector = (-12,8,6,5,4) and Increment=4, Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_19;
-
-   procedure Test_20 is
-      Msg   : constant String := "Test_20: Is_Palindrome I";
-      Number : Integer := 4554;
-      Palindrome : Boolean;
-   begin
-      Is_Palindrome(Number, Palindrome);
-      Assert_True(Palindrome = True, Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_20;
-
-   procedure Test_21 is
-      Msg   : constant String := "Test_21: Is_Palindrome II";
-      Number : Integer := 123456;
-      Palindrome : Boolean;
-   begin
-      Is_Palindrome(Number, Palindrome);
-      Assert_True(Palindrome = False, Msg);
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_21;
+--     procedure Test_13 is
+--        Msg   : constant String := "Test_13: Multiply_Vectors I";
+--     begin
+--        Multiply_Vectors((1,2),(2,1));
+--        Assert_True(Global_Vector = (-2,-2,-1,-1,-1), Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_13;
+--
+--     procedure Test_14 is
+--        Msg   : constant String := "Test_14: Multiply_Vectors II";
+--     begin
+--        Multiply_Vectors((3,-2,1),(2,2,-5));
+--        Assert_True(Global_Vector = (-12,8,5,-1,-1), Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_14;
+--
+--     procedure Test_15 is
+--        Msg   : constant String := "Test_15: Inverse_Vector I";
+--     begin
+--        Inverse_Vector;
+--        Assert_True(Global_Inverse_Vector = (22, 0, 9, 5, -3), Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_15;
+--
+--     procedure Test_16 is
+--        Msg   : constant String := "Test_16: Resolve_Quadratic_Equation I";
+--        R1 : Float;
+--        R2: Float;
+--     begin
+--        Resolve_Quadratic_Equation(1.0,-13.0,-30.0, R1, R2);
+--        Assert_True(R1 = 15.0 and R2 = -2.0, Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_16;
+--
+--     procedure Test_17 is
+--        Msg   : constant String := "Test_17: Resolve_Quadratic_Equation II";
+--        R1 : Float;
+--        R2: Float;
+--     begin
+--        Resolve_Quadratic_Equation(3.0,2.0,7.0, R1, R2);
+--        Assert_True(R1 = -1.0 and R2 = -1.0, Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_17;
+--
+--     procedure Test_18 is
+--        Msg   : constant String := "Test_18: Search_And_Increment I";
+--     begin
+--        Search_And_Increment(5); -- Global_Vector after Test_14: (-12,8,5,-1,-1) and Increment = 1
+--        Assert_True(Global_Vector = (-12,8,6,-1,-1) and Increment = 6, Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_18;
+--
+--     procedure Test_19 is
+--        Msg   : constant String := "Test_19: Search_And_Increment II";
+--     begin
+--        Search_And_Increment(-1); -- Global_Vector after Test_18: (-12,8,6,-1,-1) and Increment = 6
+--        Assert_True(Global_Vector = (-12,8,6,5,4) and Increment=4, Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_19;
+--
+--     procedure Test_20 is
+--        Msg   : constant String := "Test_20: Is_Palindrome I";
+--        Number : Integer := 4554;
+--        Palindrome : Boolean;
+--     begin
+--        Is_Palindrome(Number, Palindrome);
+--        Assert_True(Palindrome = True, Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_20;
+--
+--     procedure Test_21 is
+--        Msg   : constant String := "Test_21: Is_Palindrome II";
+--        Number : Integer := 123456;
+--        Palindrome : Boolean;
+--     begin
+--        Is_Palindrome(Number, Palindrome);
+--        Assert_True(Palindrome = False, Msg);
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_21;
 
 begin
    Put_Line ("********* Batch Tests *********");
@@ -274,13 +274,13 @@ begin
    Test_10;
    Test_11;
    Test_12;
-   Test_13;
-   Test_14;
-   Test_15;
-   Test_16;
-   Test_17;
-   Test_18;
-   Test_19;
-   Test_20;
-   Test_21;
+--     Test_13;
+--     Test_14;
+--     Test_15;
+--     Test_16;
+--     Test_17;
+--     Test_18;
+--     Test_19;
+--     Test_20;
+--     Test_21;
 end Test_P3_1;

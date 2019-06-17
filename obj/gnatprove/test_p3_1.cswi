@@ -1,4 +1,4 @@
-20190404184112
+20190617201438
 -c
 -x
 ada
@@ -9,4 +9,4 @@ ada
 -fstack-check
 -gnato
 -gnatc
--gnates=C:\Users\quera\Desktop\Practice1\obj\gnatprove\048a7e19.tmp
+-gnates=/Users/QSM/Desktop/ADA-SPARK-Exercises/obj/gnatprove/b859777f.tmp

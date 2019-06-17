@@ -1,0 +1,12 @@
+20190617201902
+-c
+-x
+ada
+-gnatA
+-g
+-gnata
+-gnat12
+-fstack-check
+-gnato
+-gnatc
+-gnates=/Users/QSM/Desktop/ADA-SPARK-Exercises/obj/gnatprove/85a74aac.tmp
