@@ -4,80 +4,43 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
 
 package body P3_1 with SPARK_Mode => On is
-   
-   -- Procedures
-   
---     procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) is
---        r: Integer := 0;
---        sum: Integer := 0;
---        temp : Integer := number;
---     begin
---        while number>0 loop
---           r := number mod 10;
---           sum := (sum*10)+r;
---           number := number/10;
---        end loop;
---        
---        if temp = sum then
---           palindrome := True;
---        else 
---           palindrome := False;
---        end if;
---        
---     end Is_Palindrome;
---     
---     procedure Search_And_Increment (number: Integer) is
---        i : Integer := 0;
---     begin
---        while i <= Global_Vector'Length-1 loop
---           if Global_Vector(i) = number then
---              Global_Vector(i) := number + Increment;
---              Increment := Increment + number;
---           end if;
---           i := i +1;
---        end loop;
---     end Search_And_Increment;
---     
---     procedure Resolve_Quadratic_Equation (A, B, C : Float;  R1, R2  : out Float) is
---        Z: Float := B * B - 4.0 * A * C;
---     begin
---        if Z < 0.0 or A = 0.0 then
---           R1 := -1.0;
---           R2 := -1.0;
---           return;
---        else
---           R1 := (-B + SQRT (Z)) / (2.0*A); -- Positive root
---           R2 := (-B - SQRT (Z)) / (2.0*A); -- Negative root
---        end if;
---     end Resolve_Quadratic_Equation;
---     
---     
---     procedure Inverse_Vector is 
---        i : Integer := 0;
---        j : Integer := Global_Inverse_Vector'Length-1;
---        temp: Integer;
---     begin
---        while i < j loop
---           temp := Global_Inverse_Vector(i);
---           Global_Inverse_Vector(i) := Global_Inverse_Vector(j);
---           Global_Inverse_Vector(j) := temp;
---           i := i + 1;
---           j := j - 1;
---        end loop;
---     end Inverse_Vector;
---     
---     procedure Multiply_Vectors (vec1, vec2 : Vector) is
---        count : Integer := Get_Max_Count(vec1,vec2);
---     begin
---        for i in 0..count-1 loop
---           --pragma Loop_Invariant (i in 0..count-1);
---           --pragma Loop_Invariant (for all K in 0..i =>(Global_Vector(K) = vec1(K)*vec2(K)*Global_Vector(K)));
---           Global_Vector(i) := vec1(i)*vec2(i)*Global_Vector(i);
---        end loop;
---     end Multiply_Vectors;
-   
-   
-   -- Functions
+     
+   procedure Search_And_Increment (number: Natural) is
+      i : Natural := Global_Vector'First;
+   begin
+      while (i <= Global_Vector'Last) loop
+         pragma Loop_Invariant(I < Max);
+         pragma Loop_Invariant(I in Global_Vector'First..Global_Vector'Last);
+         pragma Loop_Invariant((for all K in I..Global_Vector'Last =>
+                                  (if Global_Vector(K) = number then (Global_Vector(K) = number + Increment))));
+         if Global_Vector(i) = number then
+            Global_Vector(i) := number + Increment;
+         end if;
+         i := i + 1;
+      end loop;
+   end Search_And_Increment;
+      
+      
+   function Inverse_Vector return Vector is
+      vec : Vector (0..Global_Inverse_Vector'Length-1) := (others => 0);
+      i : Natural := vec'First;
+      j : Integer := Global_Inverse_Vector'Last;
+   begin
+      while (i <= vec'Last and j >= Global_Inverse_Vector'First) loop
+         pragma Loop_Invariant(I < Max);
+         pragma Loop_Invariant(I in vec'First..vec'Last);
+         pragma Loop_Invariant(J in Global_Inverse_Vector'First..Global_Inverse_Vector'Last);
+         pragma Loop_Invariant(for all K in I..vec'Last => 
+                                 (for all L in reverse Global_Inverse_Vector'First..J =>
+                                    vec(K) = Global_Inverse_Vector(L)));
+         vec(i) := Global_Inverse_Vector(j);
+         i := i + 1;
+         j := j - 1;
+      end loop;
+      return vec;
+   end Inverse_Vector;
+      
+
    
    function Get_Max_Count (vec1, vec2: Vector) return Integer is
    begin

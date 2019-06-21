@@ -4,32 +4,27 @@ Summary of SPARK analysis
 ---------------------------------------------------------------------------------------------------------
 SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified   Unproved
 ---------------------------------------------------------------------------------------------------------
-Data Dependencies                 5           5          .          .            .           .          .
-Flow Dependencies                 5           5          .          .            .           .          .
+Data Dependencies                 7           7          .          .            .           .          .
+Flow Dependencies                 7           7          .          .            .           .          .
 Initialization                    .           .          .          .            .           .          .
 Non-Aliasing                      .           .          .          .            .           .          .
-Run-time Checks                  20           .          .          .    20 (CVC4)           .          .
-Assertions                       11           .          .          .    11 (CVC4)           .          .
-Functional Contracts              6           .          .          .     6 (CVC4)           .          .
+Run-time Checks                  45           .          .          .    45 (CVC4)           .          .
+Assertions                       25           .          .          .    23 (CVC4)           .          2
+Functional Contracts              8           .          .          .     6 (CVC4)           .          2
 LSP Verification                  .           .          .          .            .           .          .
 ---------------------------------------------------------------------------------------------------------
-Total                            47    10 (21%)          .          .     37 (79%)           .          .
+Total                            92    14 (15%)          .          .     74 (80%)           .     4 (4%)
 
 
 max steps used for successful proof: 1
 
-Analyzed 3 units
-in unit p3_1, 6 subprograms and packages out of 6 analyzed
-  P3_1 at p3_1.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  P3_1.Compare_To at p3_1.ads:53 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
-  P3_1.Count_Lower_Elements at p3_1.ads:67 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (17 checks)
-  P3_1.Delete_Elements at p3_1.ads:58 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (14 checks)
-  P3_1.Get_Bood_Pressure_Degree at p3_1.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
-  P3_1.Get_Max_Count at p3_1.ads:29 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
-in unit test_assertions, 0 subprograms and packages out of 4 analyzed
-  Test_Assertions.Assert_False at test_assertions.ads:7 skipped
-  Test_Assertions.Assert_False at test_assertions.ads:13 skipped
-  Test_Assertions.Assert_True at test_assertions.ads:4 skipped
-  Test_Assertions.Assert_True at test_assertions.ads:10 skipped
-in unit test_p3_1, 0 subprograms and packages out of 1 analyzed
-  Test_P3_1 at test_p3_1.adb:5 skipped
+Analyzed 1 unit
+in unit p3_1, 8 subprograms and packages out of 8 analyzed
+  P3_1 at p3_1.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  P3_1.Compare_To at p3_1.ads:57 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  P3_1.Count_Lower_Elements at p3_1.ads:71 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (17 checks)
+  P3_1.Delete_Elements at p3_1.ads:62 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (14 checks)
+  P3_1.Get_Bood_Pressure_Degree at p3_1.ads:39 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  P3_1.Get_Max_Count at p3_1.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
+  P3_1.Inverse_Vector at p3_1.ads:22 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 18 checks out of 20 proved
+  P3_1.Search_And_Increment at p3_1.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 19 checks out of 21 proved

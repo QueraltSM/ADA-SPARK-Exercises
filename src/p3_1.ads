@@ -1,30 +1,34 @@
+with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
+
 package P3_1 with SPARK_Mode => ON is
    Max : constant := 1000;
    type Vector is array(Natural range <>) of Integer;
 
    Global_Vector :  Vector := (-1,-1,-1,-1,-1);
-   Global_Inverse_Vector : Vector := (-3, 5, 9, 0, 22);
+   Global_Inverse_Vector :  Vector := (-3, 5, 9, 0, 22);
    Increment : Integer := 1;
 
-   -- Procedures
-
---     procedure Is_Palindrome (number: in out Integer; palindrome: out Boolean) with
---       Global => null;
---
---     procedure Search_And_Increment (number: Integer) with
---       Global => null;
---
---     procedure Resolve_Quadratic_Equation (A, B, C : Float; R1, R2  : out Float) with
---       Global => null;
---
---     procedure Inverse_Vector with
---       Global => null;
---
---     procedure Multiply_Vectors (vec1, vec2 : Vector) with
---       Global => (Input => Global_Vector);
+   procedure Search_And_Increment (number: Natural) with
+     Global => (In_Out => Global_Vector,
+                Input => Increment),
+     Depends => (Global_Vector =>+ (number, Increment)),
+     Pre => (Global_Vector'Length < Max and Global_Vector'First = 0)
+     and ((number >= 0 and then Increment <= Integer'Last - number)
+          or else (number < 0 and then Increment >= Integer'First - number)),
+     Post => (for all K in Global_Vector'Range =>
+                (if number = Global_Vector(K) then Global_Vector(K) = number + Increment));
 
 
-   -- Functions
+   function Inverse_Vector return Vector with
+     Global => Global_Inverse_Vector,
+     Depends => (Inverse_Vector'Result => Global_Inverse_Vector),
+     Pre => (Global_Inverse_Vector'Length > 0 and Global_Inverse_Vector'Length < Max) and then
+     Global_Inverse_Vector'First=0,
+     Post => (for all I in Inverse_Vector'Result'Range =>
+                (for all J in reverse Global_Inverse_Vector'Range =>
+                     Inverse_Vector'Result(I) = Global_Inverse_Vector(J)));
+
+
 
    function Get_Max_Count(vec1, vec2: Vector) return Integer
      with Global => null,
