@@ -1,1 +1,0 @@
-p3_1.adb:31:32: medium: loop invariant might fail in first iteration, cannot prove J in Global_Inverse_Vector'Last..Global_Inverse_Vector'First-1[#0]

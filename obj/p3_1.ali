@@ -1,0 +1,152 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -g
+A -gnata
+A -gnat12
+A -fstack-check=specific
+A -gnato
+A -mtune=core2
+A -mmacosx-version-min=10.13.0
+A -fPIC
+A -feliminate-unused-debug-symbols
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U p3_1%b		p3_1.adb		15fe7fc3 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W p3_1%s		p3_1.adb		p3_1.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U p3_1%s		p3_1.ads		9ab4f67e EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-inteio.ads		20190518041256 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20190518041254 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20190518041254 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20190518041256 55716239 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-tiinio.ads		20190518041254 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D p3_1.ads		20190622194113 995ccb62 p3_1%s
+D p3_1.adb		20190622194053 4ea91e16 p3_1%b
+D system.ads		20190518041255 085b6ffb system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c Z s s [vectorIP p3_1 5 9 none]
+G c Z s b [search_and_increment p3_1 11 14 none]
+G c Z s b [inverse_vector p3_1 22 13 none]
+G c Z s b [get_max_count p3_1 32 13 none]
+G c Z s b [get_bood_pressure_degree p3_1 38 13 none]
+G c Z s b [compare_to p3_1 56 13 none]
+G c Z s b [delete_elements p3_1 61 13 none]
+G c Z s b [count_lower_elements p3_1 70 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|1r6 1r45 16|2r6 2r23 3r6 3r31 4r6 4r45
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 16|3w10 3r35
+X 5 a-numeri.ads
+16K13*Numerics 32e17 15|1r10 1r49 16|4r10 4r49
+X 6 a-nuelfu.ads
+18K22*Elementary_Functions[7|39] 15|1w19 1r58 16|4w19 4r58
+X 10 a-textio.ads
+57K13*Text_IO 727e16 16|2w10 2r27
+X 15 p3_1.ads
+3K9*P3_1 80l5 80e9 16|1w6 1r16 6b14 113l5 113t9
+4N4*Max 15r37 25r82 35r75 35r97 64r30 73r30
+5A9*Vector(integer)<integer> 7r21 8r29 22r35 32r39 61r39 61r71 70r44 16|23r35
+. 24r13 41r40 72r39 72r71 73r20 97r44
+7a4*Global_Vector{5A9} 12r27 14r18 15r14 15r45 18r28 18r52 19r21 19r45 16|9r22
+. 11r19 12r37 13r49 13r71 14r58 14r80 15r13 16m13
+8a4*Global_Inverse_Vector{5A9} 23r16 24r43 25r14 25r51 26r6 28r31 28r59 29r49
+. 16|24r24 26r22 28r37 30r37 32r53 33r46 34r20
+9i4*Increment{integer} 13r26 14r45 16r33 17r40 16|16r42
+11U14*Search_And_Increment 11>36 16|8b14 20l8 20t28
+11i36 number{integer} 14r37 16r12 16r61 17r20 17r69 18r72 19r64 16|8b36 13r91
+. 14r99 15r32 16r33
+18i23 J{integer} 18r66
+19i16 J{integer} 19r59
+22V13*Inverse_Vector{5A9} 24r18 27r28 29r22 16|23b13 39l8 39t22
+27i23 I{integer} 29r44
+28i26 J{integer} 29r71
+32V13*Get_Max_Count{integer} 32>27 32>33 34r18 36r49 16|41b13 47l8 47t21
+32a27 vec1{5A9} 34r43 35r14 35r61 36r18 36r72 16|41b28 43r10 44r17
+32a33 vec2{5A9} 34r49 35r34 35r83 36r32 16|41b34 43r24 46r14
+38V13*Get_Bood_Pressure_Degree{string} 38>38 38>48 40r18 43r17 45r24 47r27
+. 49r30 51r33 53r36 54r43 16|49b13 65l8 65t32
+38i38 systolic{integer} 40r54 41r13 41r30 42r18 44r23 44r41 46r27 46r46 48r30
+. 48r49 50r32 52r35 16|49b39 51r10 53r13 53r31 55r14 55r33 57r14 57r33 59r13
+. 61r13
+38i48 diastolic{integer} 40r64 41r58 41r76 42r35 44r60 44r79 46r66 46r85
+. 48r69 48r88 50r50 52r53 16|49b49 51r27 53r50 53r69 55r53 55r72 57r53 57r72
+. 59r31 61r31
+56V13*Compare_To{boolean} 56>25 56>34 58r18 59r14 16|67b13 70l8 70t18
+56a25 String1{string} 58r40 59r35 16|67b25 69r14
+56a34 String2{string} 58r48 59r45 16|67b34 69r22
+61V13*Delete_Elements{5A9} 61>30 61>47 63r18 65r18 67r10 16|72b13 95l8 95t23
+61a30 Vector1{5A9} 63r45 64r13 64r43 66r31 66r48 68r24 68r41 16|72b30 73r53
+. 79r16 80r13 81r30 87r64 90r30 90r50 92r29 92r49
+61i47 Number{integer} 63r54 66r61 68r55 16|72b47 73r62 80r27 90r64 92r62
+66i26 K{integer} 66r56
+68i19 K{integer} 68r49
+70V13*Count_Lower_Elements{natural} 70>34 70>52 72r18 74r42 75r10 16|73s32
+. 97b13 112l8 112t28
+70a34 Vector1{5A9} 72r50 73r13 73r43 74r18 76r24 76r41 78r23 78r40 16|97b34
+. 98r22 101r16 102r13 106r37 106r52 108r44
+70i52 Number{integer} 72r59 76r52 78r52 16|97b52 102r24
+76i19 K{integer} 76r49
+78i18 X{integer} 78r48
+X 16 p3_1.adb
+9i7 i{natural} 11r14 12r32 13r46 14r55 15r27 16r27 18m10 18r15
+13i41 K{integer} 13r85
+14i50 K{integer} 14r94
+24a7 vec{15|5A9} 25r22 28r19 29r37 29r48 31r45 33r37 34m10 38r14
+25i7 i{natural} 28r14 29r32 31r56 34r14 35m10 35r15
+26i7 j{integer} 28r32 30r32 32r48 34r42 36m10 36r15
+31i40 K{integer} 33r41
+32i43 L{integer} 33r68
+73a7 Aux_Vector{15|5A9} 76r10 81m13 83r20 84r23 87r38 94r14
+74i7 j{natural} 81r24 82m13 82r18 83r16 87r33 89r16
+79i11 i{integer} 80r21 81r38 87r59 90r45 92r44
+90i25 K{integer} 90r58
+92i24 K{integer} 92r57
+98i7 i{natural} 101r13 102r21 105r43 106r32 107r44 108r42 109m10 109r15
+99i7 Count{natural} 103m13 103r22 107r32 108r32 111r14
+

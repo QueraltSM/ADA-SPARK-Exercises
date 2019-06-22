@@ -5,7 +5,7 @@ with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
 
 package body P3_1 with SPARK_Mode => On is
      
-   procedure Search_And_Increment (number: Natural) is
+   procedure Search_And_Increment (number: Integer) is
       i : Natural := Global_Vector'First;
    begin
       while (i <= Global_Vector'Last) loop
@@ -26,11 +26,10 @@ package body P3_1 with SPARK_Mode => On is
       j : Integer := Global_Inverse_Vector'Last;
    begin
       while (i <= vec'Last and j >= Global_Inverse_Vector'First) loop
-         pragma Loop_Invariant(I < Max);
          pragma Loop_Invariant(I in vec'First..vec'Last);
-         pragma Loop_Invariant(J in Global_Inverse_Vector'Last..Global_Inverse_Vector'First-1);
+         pragma Loop_Invariant(J in Global_Inverse_Vector'Range);
          pragma Loop_Invariant(for all K in vec'First..I => 
-                                 (for all L in J..Global_Inverse_Vector'First => 
+                                 (for all L in J+1..Global_Inverse_Vector'First => 
                                     vec(K) = Global_Inverse_Vector(L)));
          vec(i) := Global_Inverse_Vector(j);
          i := i + 1;
@@ -38,8 +37,6 @@ package body P3_1 with SPARK_Mode => On is
       end loop;
       return vec;
    end Inverse_Vector;
-      
-
    
    function Get_Max_Count (vec1, vec2: Vector) return Integer is
    begin

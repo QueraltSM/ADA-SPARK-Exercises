@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__test_p3_1.o
+[PROJECT FILES]
+/Users/QSM/Desktop/ADA-SPARK-Exercises/practice_1.gpr
+20190617191924
+[BOUND OBJECT FILES]
+/Users/QSM/Desktop/ADA-SPARK-Exercises/obj/p3_1.o
+/Users/QSM/Desktop/ADA-SPARK-Exercises/obj/test_assertions.o
+/Users/QSM/Desktop/ADA-SPARK-Exercises/obj/test_p3_1.o
+[GENERATED SOURCE FILES]
+b__test_p3_1.ads
+b__test_p3_1.adb
+b__test_p3_1.ali
+[RESULTING OPTIONS]
+-L/Users/QSM/Desktop/ADA-SPARK-Exercises/obj/
+-L/Users/QSM/Desktop/ADA-SPARK-Exercises/obj/
+-L/users/qsm/opt/gnat/2019/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/
+-static
+/users/qsm/opt/gnat/2019/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/libgnat.a

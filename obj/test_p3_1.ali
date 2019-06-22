@@ -1,0 +1,126 @@
+V "GNAT Lib v2019"
+M P W=b
+A -gnatA
+A -g
+A -gnata
+A -gnat12
+A -fstack-check=specific
+A -gnato
+A -mtune=core2
+A -mmacosx-version-min=10.13.0
+A -fPIC
+A -feliminate-unused-debug-symbols
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U test_p3_1%b		test_p3_1.adb		8661dfb2 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W p3_1%s		p3_1.adb		p3_1.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W test_assertions%s	test_assertions.adb	test_assertions.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20190518041254 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20190518041254 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20190518041256 55716239 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D p3_1.ads		20190622194113 995ccb62 p3_1%s
+D system.ads		20190518041255 085b6ffb system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D test_assertions.ads	20190617191924 c1dd7c95 test_assertions%s
+D test_p3_1.adb		20190622195400 7014bd28 test_p3_1%b
+G a e
+G c Z b b [test_p3_1 standard 5 11 none]
+G r c none [test_p3_1 standard 5 11 none] [compare_to p3_1 56 13 none]
+G r c none [test_p3_1 standard 5 11 none] [assert_true test_assertions 10 14 none]
+G r c none [test_p3_1 standard 5 11 none] [assert_false test_assertions 13 14 none]
+G r c none [test_p3_1 standard 5 11 none] [count_lower_elements p3_1 70 13 none]
+G r c none [test_p3_1 standard 5 11 none] [delete_elements p3_1 61 13 none]
+G r c none [test_p3_1 standard 5 11 none] [get_bood_pressure_degree p3_1 38 13 none]
+G r c none [test_p3_1 standard 5 11 none] [get_max_count p3_1 32 13 none]
+G r c none [test_p3_1 standard 5 11 none] [inverse_vector p3_1 22 13 none]
+G r c none [test_p3_1 standard 5 11 none] [search_and_increment p3_1 11 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 28|1r6 1r28
+X 9 a-textio.ads
+57K13*Text_IO 727e16 28|1w10 1r32
+508U14*Put_Line 28|13s10 15s10 24s10 26s10 35s10 37s10 46s10 48s10 57s10
+. 59s10 68s10 70s10 79s10 81s10 90s10 92s10 101s10 103s10 112s10 114s10 123s10
+. 125s10 135s10 137s10 147s10 149s10 160s10 162s10 172s10 174s10 178s4
+X 13 p3_1.ads
+3K9*P3_1 80e9 28|3w6 3r24
+5A9*Vector(integer)<integer>
+7a4*Global_Vector{5A9} 28|157r19 169r19
+11U14*Search_And_Increment 28|156s7 168s7
+22V13*Inverse_Vector{5A9} 28|144s19
+32V13*Get_Max_Count{integer} 28|120s19 132s19
+38V13*Get_Bood_Pressure_Degree{string} 28|98s19 109s19
+56V13*Compare_To{boolean} 28|10s20 21s21
+61V13*Delete_Elements{5A9} 28|65s19 76s19 87s19
+70V13*Count_Lower_Elements{natural} 28|32s19 43s19 54s19
+X 27 test_assertions.ads
+1K9*Test_Assertions 15e20 28|2w6 2r28
+2X4*Assertion_Error 28|12r12 23r12 34r12 45r12 56r12 67r12 78r12 89r12 100r12
+. 111r12 122r12 134r12 146r12 159r12 171r12
+10U14*Assert_True 28|10s7 32s7 43s7 54s7 65s7 76s7 87s7 98s7 109s7 120s7
+. 132s7 144s7 157s7 169s7
+13U14*Assert_False 28|21s7
+X 28 test_p3_1.adb
+5U11*Test_P3_1 5b11 194l5 194t14
+7U14 Test_1 7b14 16l8 16t14 179s4
+8a7 Msg{string} 10r71 13r20 15r20
+18U14 Test_2 18b14 27l8 27t14 180s4
+19a7 Msg{string} 21r62 24r20 26r20
+29U14 Test_3 29b14 38l8 38t14 181s4
+30a7 Msg{string} 32r54 35r20 37r20
+40U14 Test_4 40b14 49l8 49t14 182s4
+41a7 Msg{string} 43r58 46r20 48r20
+51U14 Test_5 51b14 60l8 60t14 183s4
+52a7 Msg{string} 54r70 57r20 59r20
+62U14 Test_6 62b14 71l8 71t14 184s4
+63a7 Msg{string} 65r65 68r20 70r20
+73U14 Test_7 73b14 82l8 82t14 185s4
+74a7 Msg{string} 76r60 79r20 81r20
+84U14 Test_8 84b14 93l8 93t14 186s4
+85a7 Msg{string} 87r62 90r20 92r20
+95U14 Test_9 95b14 104l8 104t14 187s4
+96a7 Msg{string} 98r61 101r20 103r20
+106U14 Test_10 106b14 115l8 115t15 188s4
+107a7 Msg{string} 109r71 112r20 114r20
+117U14 Test_11 117b14 126l8 126t15 189s4
+118a7 Msg{string} 120r58 123r20 125r20
+129U14 Test_12 129b14 138l8 138t15 190s4
+130a7 Msg{string} 132r56 135r20 137r20
+141U14 Test_13 141b14 150l8 150t15 191s4
+142a7 Msg{string} 144r55 147r20 149r20
+153U14 Test_14 153b14 163l8 163t15 192s4
+154a7 Msg{string} 157r49 160r20 162r20
+165U14 Test_15 165b14 175l8 175t15 193s4
+166a7 Msg{string} 169r49 172r20 174r20
+

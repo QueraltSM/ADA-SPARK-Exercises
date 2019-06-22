@@ -4,11 +4,11 @@ package P3_1 with SPARK_Mode => ON is
    Max : constant := 1000;
    type Vector is array(Natural range <>) of Integer;
 
-   Global_Vector :  Vector := (-1,-1,-1,-1,-1);
+   Global_Vector :  Vector := (5,10,2,5,0);
    Global_Inverse_Vector :  Vector := (-3, 5, 9, 0, 22);
    Increment : Integer := 1;
 
-   procedure Search_And_Increment (number: Natural) with
+   procedure Search_And_Increment (number: Integer) with
      Global => (In_Out => Global_Vector,
                 Input => Increment),
      Depends => (Global_Vector =>+ (number, Increment)),
@@ -16,7 +16,7 @@ package P3_1 with SPARK_Mode => ON is
      and ((number >= 0 and then Increment <= Integer'Last - number)
           or else (number < 0 and then Increment >= Integer'First - number)),
      Post => (for all J in Global_Vector'Range => (Global_Vector(J) /= number)) or else
-   (for some J in Global_Vector'Range => (Global_Vector(J) = number));
+     (for some J in Global_Vector'Range => (Global_Vector(J) = number));
 
 
    function Inverse_Vector return Vector with
@@ -25,7 +25,7 @@ package P3_1 with SPARK_Mode => ON is
      Pre => (Global_Inverse_Vector'Length > 0 and Global_Inverse_Vector'Length < Max) and then
      Global_Inverse_Vector'First=0,
      Post => (for all I in Inverse_Vector'Result'Range =>
-                (for all J in reverse Global_Inverse_Vector'Range =>
+                (for all J in Global_Inverse_Vector'Last..Global_Inverse_Vector'First =>
                      Inverse_Vector'Result(I) = Global_Inverse_Vector(J)));
 
 
