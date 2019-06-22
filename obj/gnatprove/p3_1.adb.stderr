@@ -1,4 +1,1 @@
-p3_1.adb:15:70: medium: loop invariant might fail in first iteration, cannot prove Global_Vector(K) = number + Increment (e.g. when Global_Vector = (others => 0) and Increment = -1 and K = 1 and number = 0)[#0]
-p3_1.adb:35:37: medium: loop invariant might fail in first iteration, cannot prove vec(K) = Global_Inverse_Vector(L) (e.g. when Global_Inverse_Vector = (others => -1) and K = 0 and L = 0 and vec = (others => 0))[#2]
-p3_1.ads:19:52: medium: postcondition might fail, cannot prove Global_Vector(K) = number + Increment (e.g. when Global_Vector = (1 => -1, others => 0) and Increment = -1 and K = 0 and number = 0)[#1]
-p3_1.ads:29:22: medium: postcondition might fail, cannot prove Inverse_Vector'Result(I) = Global_Inverse_Vector(J) (e.g. when Global_Inverse_Vector = (0 => 0, 1 => -1, others => 998) and I = 998 and Inverse_Vector'Result = (others => 0) and Inverse_Vector'Result'First = 0 and Inverse_Vector'Result'Last = 998 and J = 1)[#3]
+p3_1.adb:31:32: medium: loop invariant might fail in first iteration, cannot prove J in Global_Inverse_Vector'Last..Global_Inverse_Vector'First-1[#0]

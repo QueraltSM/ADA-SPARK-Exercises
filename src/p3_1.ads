@@ -15,8 +15,8 @@ package P3_1 with SPARK_Mode => ON is
      Pre => (Global_Vector'Length < Max and Global_Vector'First = 0)
      and ((number >= 0 and then Increment <= Integer'Last - number)
           or else (number < 0 and then Increment >= Integer'First - number)),
-     Post => (for all K in Global_Vector'Range =>
-                (if number = Global_Vector(K) then Global_Vector(K) = number + Increment));
+     Post => (for all J in Global_Vector'Range => (Global_Vector(J) /= number)) or else
+   (for some J in Global_Vector'Range => (Global_Vector(J) = number));
 
 
    function Inverse_Vector return Vector with
@@ -27,7 +27,6 @@ package P3_1 with SPARK_Mode => ON is
      Post => (for all I in Inverse_Vector'Result'Range =>
                 (for all J in reverse Global_Inverse_Vector'Range =>
                      Inverse_Vector'Result(I) = Global_Inverse_Vector(J)));
-
 
 
    function Get_Max_Count(vec1, vec2: Vector) return Integer

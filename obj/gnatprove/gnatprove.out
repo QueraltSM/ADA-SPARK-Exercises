@@ -8,12 +8,12 @@ Data Dependencies                 7           7          .          .           
 Flow Dependencies                 7           7          .          .            .           .          .
 Initialization                    .           .          .          .            .           .          .
 Non-Aliasing                      .           .          .          .            .           .          .
-Run-time Checks                  45           .          .          .    45 (CVC4)           .          .
-Assertions                       25           .          .          .    23 (CVC4)           .          2
-Functional Contracts              8           .          .          .     6 (CVC4)           .          2
+Run-time Checks                  43           .          .          .    43 (CVC4)           .          .
+Assertions                       23           .          .          .    22 (CVC4)           .          1
+Functional Contracts              8           .          .          .     8 (CVC4)           .          .
 LSP Verification                  .           .          .          .            .           .          .
 ---------------------------------------------------------------------------------------------------------
-Total                            92    14 (15%)          .          .     74 (80%)           .     4 (4%)
+Total                            88    14 (16%)          .          .     73 (83%)           .     1 (1%)
 
 
 max steps used for successful proof: 1
@@ -21,10 +21,10 @@ max steps used for successful proof: 1
 Analyzed 1 unit
 in unit p3_1, 8 subprograms and packages out of 8 analyzed
   P3_1 at p3_1.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  P3_1.Compare_To at p3_1.ads:57 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
-  P3_1.Count_Lower_Elements at p3_1.ads:71 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (17 checks)
-  P3_1.Delete_Elements at p3_1.ads:62 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (14 checks)
-  P3_1.Get_Bood_Pressure_Degree at p3_1.ads:39 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
-  P3_1.Get_Max_Count at p3_1.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
-  P3_1.Inverse_Vector at p3_1.ads:22 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 18 checks out of 20 proved
-  P3_1.Search_And_Increment at p3_1.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 19 checks out of 21 proved
+  P3_1.Compare_To at p3_1.ads:56 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  P3_1.Count_Lower_Elements at p3_1.ads:70 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (17 checks)
+  P3_1.Delete_Elements at p3_1.ads:61 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (14 checks)
+  P3_1.Get_Bood_Pressure_Degree at p3_1.ads:38 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  P3_1.Get_Max_Count at p3_1.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
+  P3_1.Inverse_Vector at p3_1.ads:22 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 20 checks out of 21 proved
+  P3_1.Search_And_Increment at p3_1.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (16 checks)

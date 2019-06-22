@@ -35,7 +35,7 @@
       "sloc": [
         {
           "file": "p3_1.ads",
-          "line": 33
+          "line": 32
         }
       ],
       "spark": "all"
@@ -45,7 +45,7 @@
       "sloc": [
         {
           "file": "p3_1.ads",
-          "line": 39
+          "line": 38
         }
       ],
       "spark": "all"
@@ -55,7 +55,7 @@
       "sloc": [
         {
           "file": "p3_1.ads",
-          "line": 57
+          "line": 56
         }
       ],
       "spark": "all"
@@ -65,7 +65,7 @@
       "sloc": [
         {
           "file": "p3_1.ads",
-          "line": 62
+          "line": 61
         }
       ],
       "spark": "all"
@@ -75,203 +75,13 @@
       "sloc": [
         {
           "file": "p3_1.ads",
-          "line": 71
+          "line": 70
         }
       ],
       "spark": "all"
     }
   ],
   "flow": [
-    {
-      "file": "p3_1.ads",
-      "line": 40,
-      "col": 11,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Get_Bood_Pressure_Degree",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 39
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 41,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Get_Bood_Pressure_Degree",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 39
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 34,
-      "col": 11,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Get_Max_Count",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 33
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 35,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Get_Max_Count",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 33
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 63,
-      "col": 11,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Delete_Elements",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 62
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 64,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Delete_Elements",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 62
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 58,
-      "col": 11,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Compare_To",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 57
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 59,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Compare_To",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 57
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 72,
-      "col": 11,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Count_Lower_Elements",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 71
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 73,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Count_Lower_Elements",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 71
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
     {
       "file": "p3_1.ads",
       "line": 23,
@@ -303,6 +113,196 @@
           {
             "file": "p3_1.ads",
             "line": 22
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 39,
+      "col": 11,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Bood_Pressure_Degree",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 40,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Bood_Pressure_Degree",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 33,
+      "col": 11,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Max_Count",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 32
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 34,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Get_Max_Count",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 32
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 62,
+      "col": 11,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 61
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 63,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Delete_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 61
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 57,
+      "col": 11,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Compare_To",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 58,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Compare_To",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 56
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 71,
+      "col": 11,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 70
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "p3_1.ads",
+      "line": 72,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 70
           }
         ]
       },
@@ -392,7 +392,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 17,
+      "line": 16,
       "col": 40,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -419,63 +419,12 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 17,
+      "check_line": 16,
       "check_col": 40,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 17,
-      "col": 27,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Search_And_Increment",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 11
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 17,
-      "check_col": 27,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -534,9 +483,9 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 19,
-      "col": 17,
-      "rule": "VC_OVERFLOW_CHECK",
+      "line": 15,
+      "col": 27,
+      "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
         "name": "P3_1.Search_And_Increment",
@@ -552,47 +501,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 20,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 19,
-      "check_col": 17,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 14,
-      "col": 47,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Search_And_Increment",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 11
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 20,
+              "steps": 5,
               "time": 0
             }
           },
@@ -612,8 +521,8 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 14,
-      "check_col": 47,
+      "check_line": 15,
+      "check_col": 27,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -625,7 +534,47 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 15,
+      "line": 18,
+      "col": 17,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Search_And_Increment",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 26,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 18,
+      "check_col": 17,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 13,
       "col": 85,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -654,7 +603,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
+              "steps": 20,
               "time": 0
             }
           },
@@ -685,7 +634,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 15,
+      "check_line": 13,
       "check_col": 85,
       "how_proved": "prover",
       "stats": {
@@ -698,59 +647,8 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 15,
-      "col": 97,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Search_And_Increment",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 11
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 21,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 20,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 15,
-      "check_col": 97,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 15,
-      "col": 53,
+      "line": 14,
+      "col": 93,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -800,7 +698,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 20,
+              "steps": 5,
               "time": 0
             }
           },
@@ -809,8 +707,8 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 15,
-      "check_col": 53,
+      "check_line": 14,
+      "check_col": 93,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -822,10 +720,10 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 15,
-      "col": 70,
+      "line": 13,
+      "col": 32,
       "rule": "VC_LOOP_INVARIANT_INIT",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "P3_1.Search_And_Increment",
         "sloc": [
@@ -840,24 +738,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (unknown)",
-              "steps": 105,
+              "steps": 54,
               "time": 5.00000000000000E-02
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 133,
-              "time": 0
             }
           },
           "transformations": {
@@ -865,80 +747,20 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 14,
+      "check_line": 13,
       "check_col": 32,
-      "cntexmp": {
-        "p3_1.adb": {
-          "9": [
-            {
-              "name": "i",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "15": [
-            {
-              "name": "Global_Vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Increment",
-              "value": "-1",
-              "kind": "variable"
-            },
-            {
-              "name": "K",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "number",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        },
-        "p3_1.ads": {
-          "7": [
-            {
-              "name": "Global_Vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Global_Vector'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Global_Vector'Last",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "9": [
-            {
-              "name": "Increment",
-              "value": "-1",
-              "kind": "variable"
-            }
-          ],
-          "11": [
-            {
-              "name": "number",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
         }
-      },
-      "msg_id": 0,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "p3_1.adb",
-      "line": 14,
+      "line": 13,
       "col": 32,
       "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "info",
@@ -956,19 +778,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 168,
-              "time": 0
+              "steps": 90,
+              "time": 7.00000000000000E-02
             }
           },
           "transformations": {
@@ -976,20 +787,20 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 14,
+      "check_line": 13,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 2,
+          "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 7.00000002980232E-02
         }
       }
     },
     {
       "file": "p3_1.adb",
-      "line": 13,
+      "line": 12,
       "col": 32,
       "rule": "VC_LOOP_INVARIANT_INIT",
       "severity": "info",
@@ -1008,7 +819,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1027,20 +838,20 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 13,
+      "check_line": 12,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 2.99999993294477E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "p3_1.adb",
-      "line": 13,
+      "line": 12,
       "col": 32,
       "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "info",
@@ -1078,92 +889,12 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 13,
+      "check_line": 12,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 12,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_INIT",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Search_And_Increment",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 11
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 12,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 12,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_PRESERV",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Search_And_Increment",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 11
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 20,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 12,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -1171,7 +902,7 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 19,
+      "line": 18,
       "col": 66,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -1209,7 +940,7 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 19,
+      "check_line": 18,
       "check_col": 66,
       "how_proved": "prover",
       "stats": {
@@ -1223,47 +954,7 @@
     {
       "file": "p3_1.ads",
       "line": 19,
-      "col": 78,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Search_And_Increment",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 11
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 20,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.ads",
-      "check_line": 19,
-      "check_col": 78,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.ads",
-      "line": 19,
-      "col": 44,
+      "col": 57,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -1301,7 +992,7 @@
       ],
       "check_file": "p3_1.ads",
       "check_line": 19,
-      "check_col": 44,
+      "check_col": 57,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -1393,10 +1084,10 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 19,
-      "col": 52,
+      "line": 18,
+      "col": 14,
       "rule": "VC_POSTCONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "P3_1.Search_And_Increment",
         "sloc": [
@@ -1411,23 +1102,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (unknown)",
-              "steps": 197,
-              "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 296,
+              "steps": 73,
               "time": 0
             }
           },
@@ -1438,97 +1113,18 @@
       "check_file": "p3_1.ads",
       "check_line": 18,
       "check_col": 14,
-      "cntexmp": {
-        "p3_1.adb": {
-          "9": [
-            {
-              "name": "i",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "11": [
-            {
-              "name": "Global_Vector",
-              "value": "(1 => -1, others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "i",
-              "value": "2",
-              "kind": "variable"
-            }
-          ],
-          "19": [
-            {
-              "name": "i",
-              "value": "2",
-              "kind": "variable"
-            }
-          ]
-        },
-        "p3_1.ads": {
-          "7": [
-            {
-              "name": "Global_Vector",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Global_Vector'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Global_Vector'Last",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "9": [
-            {
-              "name": "Increment",
-              "value": "-1",
-              "kind": "variable"
-            }
-          ],
-          "11": [
-            {
-              "name": "number",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "19": [
-            {
-              "name": "Global_Vector",
-              "value": "(1 => -1, others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Increment",
-              "value": "-1",
-              "kind": "variable"
-            },
-            {
-              "name": "K",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "number",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 1,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "p3_1.adb",
-      "line": 25,
+      "line": 24,
       "col": 7,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -1566,7 +1162,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 25,
+      "check_line": 24,
       "check_col": 7,
       "how_proved": "prover",
       "stats": {
@@ -1579,7 +1175,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 25,
+      "line": 24,
       "col": 45,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -1606,7 +1202,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 25,
+      "check_line": 24,
       "check_col": 45,
       "how_proved": "prover",
       "stats": {
@@ -1619,7 +1215,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 25,
+      "line": 24,
       "col": 59,
       "rule": "VC_LENGTH_CHECK",
       "severity": "info",
@@ -1679,7 +1275,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 25,
+      "check_line": 24,
       "check_col": 59,
       "how_proved": "prover",
       "stats": {
@@ -1692,7 +1288,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 36,
+      "line": 35,
       "col": 42,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -1711,7 +1307,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 4.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1730,20 +1326,20 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 36,
+      "check_line": 35,
       "check_col": 42,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 3.99999991059303E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "p3_1.adb",
-      "line": 36,
+      "line": 35,
       "col": 14,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -1781,12 +1377,52 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 36,
+      "check_line": 35,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 36,
+      "col": 17,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Inverse_Vector",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 22
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 36,
+      "check_col": 17,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -1812,7 +1448,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 16,
+              "steps": 5,
               "time": 0
             }
           },
@@ -1834,47 +1470,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 38,
-      "col": 17,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Inverse_Vector",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 22
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 16,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 38,
-      "check_col": 17,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 35,
+      "line": 34,
       "col": 41,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -1903,7 +1499,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 21,
+              "steps": 5,
               "time": 0
             }
           },
@@ -1914,7 +1510,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
+              "steps": 20,
               "time": 0
             }
           },
@@ -1934,7 +1530,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 35,
+      "check_line": 34,
       "check_col": 41,
       "how_proved": "prover",
       "stats": {
@@ -1947,7 +1543,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 35,
+      "line": 34,
       "col": 68,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -1965,7 +1561,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 21,
+              "steps": 5,
               "time": 0
             }
           },
@@ -1983,6 +1579,137 @@
           "transformations": {
           }
         },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 34,
+      "check_col": 68,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 32,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Inverse_Vector",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 22
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 32,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 32,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Inverse_Vector",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 22
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 32,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 31,
+      "col": 92,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Inverse_Vector",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 22
+          }
+        ]
+      },
+      "check_tree": [
         {
           "proof_attempts": {
             "CVC4": {
@@ -2007,12 +1734,12 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 35,
-      "check_col": 68,
+      "check_line": 31,
+      "check_col": 92,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -2020,8 +1747,59 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 35,
-      "col": 37,
+      "line": 31,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Inverse_Vector",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 22
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 31,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 31,
+      "col": 32,
       "rule": "VC_LOOP_INVARIANT_INIT",
       "severity": "medium",
       "entity": {
@@ -2038,12 +1816,23 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Unknown (unknown)",
-              "steps": 203,
-              "time": 8.00000000000000E-02
+              "steps": 115,
+              "time": 0
             },
             "CVC4_CE": {
               "result": "Unknown (unknown)",
-              "steps": 438,
+              "steps": 172,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
               "time": 0
             }
           },
@@ -2052,333 +1841,13 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 33,
+      "check_line": 31,
       "check_col": 32,
-      "cntexmp": {
-        "p3_1.adb": {
-          "25": [
-            {
-              "name": "vec",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "vec'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "26": [
-            {
-              "name": "i",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "27": [
-            {
-              "name": "j",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "35": [
-            {
-              "name": "Global_Inverse_Vector",
-              "value": "(others => -1)",
-              "kind": "variable"
-            },
-            {
-              "name": "K",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "L",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "p3_1.ads": {
-          "8": [
-            {
-              "name": "Global_Inverse_Vector",
-              "value": "(others => -1)",
-              "kind": "variable"
-            },
-            {
-              "name": "Global_Inverse_Vector'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Global_Inverse_Vector'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 2,
+      "msg_id": 0,
       "how_proved": "prover"
     },
     {
       "file": "p3_1.adb",
-      "line": 33,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_PRESERV",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Inverse_Vector",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 22
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 197,
-              "time": 1.10000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 33,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.09999999403954E-01
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 32,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_INIT",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Inverse_Vector",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 22
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 32,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 32,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_PRESERV",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Inverse_Vector",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 22
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 21,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 32,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 31,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_PRESERV",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Inverse_Vector",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 22
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 21,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 31,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 31,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_INIT",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Inverse_Vector",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 22
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 31,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
       "line": 30,
       "col": 32,
       "rule": "VC_LOOP_INVARIANT_INIT",
@@ -2403,6 +1872,17 @@
           },
           "transformations": {
           }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
         }
       ],
       "check_file": "p3_1.adb",
@@ -2411,7 +1891,7 @@
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -2437,7 +1917,18 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 21,
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
               "time": 0
             }
           },
@@ -2447,6 +1938,86 @@
       ],
       "check_file": "p3_1.adb",
       "check_line": 30,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 29,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Inverse_Vector",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 22
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 29,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 29,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Inverse_Vector",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 22
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 29,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
@@ -2561,10 +2132,10 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 29,
-      "col": 22,
+      "line": 27,
+      "col": 14,
       "rule": "VC_POSTCONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "P3_1.Inverse_Vector",
         "sloc": [
@@ -2578,14 +2149,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (unknown)",
-              "steps": 296,
-              "time": 1.40000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 839,
-              "time": 1.40000000000000E-01
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
             }
           },
           "transformations": {
@@ -2595,153 +2161,18 @@
       "check_file": "p3_1.ads",
       "check_line": 27,
       "check_col": 14,
-      "cntexmp": {
-        "p3_1.adb": {
-          "25": [
-            {
-              "name": "vec",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "vec'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec'Last",
-              "value": "998",
-              "kind": "variable"
-            }
-          ],
-          "26": [
-            {
-              "name": "i",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "27": [
-            {
-              "name": "j",
-              "value": "998",
-              "kind": "variable"
-            }
-          ],
-          "29": [
-            {
-              "name": "i",
-              "value": "998",
-              "kind": "variable"
-            },
-            {
-              "name": "j",
-              "value": "-1",
-              "kind": "variable"
-            },
-            {
-              "name": "vec",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "36": [
-            {
-              "name": "vec",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "37": [
-            {
-              "name": "i",
-              "value": "999",
-              "kind": "variable"
-            }
-          ],
-          "38": [
-            {
-              "name": "j",
-              "value": "-1",
-              "kind": "variable"
-            }
-          ],
-          "40": [
-            {
-              "name": "Inverse_Vector'Result",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Inverse_Vector'Result'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inverse_Vector'Result'Last",
-              "value": "998",
-              "kind": "variable"
-            }
-          ]
-        },
-        "p3_1.ads": {
-          "8": [
-            {
-              "name": "Global_Inverse_Vector",
-              "value": "(0 => 0, 1 => -1, others => 998)",
-              "kind": "variable"
-            },
-            {
-              "name": "Global_Inverse_Vector'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Global_Inverse_Vector'Last",
-              "value": "998",
-              "kind": "variable"
-            }
-          ],
-          "29": [
-            {
-              "name": "Global_Inverse_Vector",
-              "value": "(0 => 0, 1 => -1, others => 998)",
-              "kind": "variable"
-            },
-            {
-              "name": "I",
-              "value": "998",
-              "kind": "variable"
-            },
-            {
-              "name": "Inverse_Vector'Result",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Inverse_Vector'Result'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inverse_Vector'Result'Last",
-              "value": "998",
-              "kind": "variable"
-            },
-            {
-              "name": "J",
-              "value": "1",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 3,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "p3_1.adb",
-      "line": 48,
+      "line": 47,
       "col": 21,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -2750,7 +2181,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 33
+            "line": 32
           }
         ]
       },
@@ -2768,7 +2199,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 48,
+      "check_line": 47,
       "check_col": 21,
       "how_proved": "prover",
       "stats": {
@@ -2781,7 +2212,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 50,
+      "line": 49,
       "col": 18,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -2790,7 +2221,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 33
+            "line": 32
           }
         ]
       },
@@ -2808,7 +2239,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 50,
+      "check_line": 49,
       "check_col": 18,
       "how_proved": "prover",
       "stats": {
@@ -2821,7 +2252,7 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 37,
+      "line": 36,
       "col": 76,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -2830,7 +2261,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 33
+            "line": 32
           }
         ]
       },
@@ -2848,7 +2279,7 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 37,
+      "check_line": 36,
       "check_col": 76,
       "how_proved": "prover",
       "stats": {
@@ -2861,7 +2292,7 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 37,
+      "line": 36,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -2870,7 +2301,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 33
+            "line": 32
           }
         ]
       },
@@ -2899,7 +2330,7 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 37,
+      "check_line": 36,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
@@ -2912,7 +2343,7 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 43,
+      "line": 42,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -2921,7 +2352,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 39
+            "line": 38
           }
         ]
       },
@@ -2942,7 +2373,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 1.20000000000000E-01
             }
           },
           "transformations": {
@@ -2950,20 +2381,20 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 43,
+      "check_line": 42,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 1.19999997317791E-01
         }
       }
     },
     {
       "file": "p3_1.ads",
-      "line": 60,
+      "line": 59,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -2972,7 +2403,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 57
+            "line": 56
           }
         ]
       },
@@ -3001,7 +2432,7 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 60,
+      "check_line": 59,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
@@ -3014,7 +2445,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 77,
+      "line": 76,
       "col": 32,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -3023,7 +2454,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3052,7 +2483,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 77,
+      "check_line": 76,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
@@ -3065,7 +2496,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 77,
+      "line": 76,
       "col": 7,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -3074,7 +2505,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3103,7 +2534,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 77,
+      "check_line": 76,
       "check_col": 7,
       "how_proved": "prover",
       "stats": {
@@ -3116,7 +2547,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 77,
+      "line": 76,
       "col": 77,
       "rule": "VC_LENGTH_CHECK",
       "severity": "info",
@@ -3125,7 +2556,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3176,7 +2607,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 77,
+      "check_line": 76,
       "check_col": 77,
       "how_proved": "prover",
       "stats": {
@@ -3189,7 +2620,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 85,
+      "line": 84,
       "col": 24,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -3198,7 +2629,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3249,7 +2680,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 85,
+      "check_line": 84,
       "check_col": 24,
       "how_proved": "prover",
       "stats": {
@@ -3262,7 +2693,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 86,
+      "line": 85,
       "col": 20,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3271,7 +2702,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3300,7 +2731,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 86,
+      "check_line": 85,
       "check_col": 20,
       "how_proved": "prover",
       "stats": {
@@ -3313,7 +2744,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 94,
+      "line": 93,
       "col": 58,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -3322,7 +2753,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3373,7 +2804,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 94,
+      "check_line": 93,
       "check_col": 58,
       "how_proved": "prover",
       "stats": {
@@ -3386,7 +2817,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 96,
+      "line": 95,
       "col": 57,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -3395,7 +2826,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3446,7 +2877,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 96,
+      "check_line": 95,
       "check_col": 57,
       "how_proved": "prover",
       "stats": {
@@ -3459,7 +2890,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 93,
+      "line": 92,
       "col": 13,
       "rule": "VC_LOOP_INVARIANT_INIT",
       "severity": "info",
@@ -3468,7 +2899,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3489,7 +2920,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 131,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3497,20 +2928,20 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 93,
+      "check_line": 92,
       "check_col": 13,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "p3_1.adb",
-      "line": 93,
+      "line": 92,
       "col": 13,
       "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "info",
@@ -3519,7 +2950,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3548,7 +2979,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 93,
+      "check_line": 92,
       "check_col": 13,
       "how_proved": "prover",
       "stats": {
@@ -3561,7 +2992,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 91,
+      "line": 90,
       "col": 33,
       "rule": "VC_LOOP_INVARIANT_INIT",
       "severity": "info",
@@ -3570,7 +3001,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3621,7 +3052,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 91,
+      "check_line": 90,
       "check_col": 33,
       "how_proved": "prover",
       "stats": {
@@ -3634,7 +3065,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 91,
+      "line": 90,
       "col": 33,
       "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "info",
@@ -3643,7 +3074,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3675,7 +3106,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3686,7 +3117,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 72,
-              "time": 1.20000000000000E-01
+              "time": 1.10000000000000E-01
             }
           },
           "transformations": {
@@ -3694,20 +3125,20 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 91,
+      "check_line": 90,
       "check_col": 33,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 1.19999997317791E-01
+          "max_time": 1.09999999403954E-01
         }
       }
     },
     {
       "file": "p3_1.ads",
-      "line": 67,
+      "line": 66,
       "col": 56,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -3716,7 +3147,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3726,7 +3157,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 1.40000000000000E-01
             }
           },
           "transformations": {
@@ -3745,20 +3176,20 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 67,
+      "check_line": 66,
       "check_col": 56,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 1.40000000596046E-01
         }
       }
     },
     {
       "file": "p3_1.ads",
-      "line": 69,
+      "line": 68,
       "col": 49,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -3767,7 +3198,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3796,7 +3227,7 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 69,
+      "check_line": 68,
       "check_col": 49,
       "how_proved": "prover",
       "stats": {
@@ -3809,7 +3240,7 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 66,
+      "line": 65,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -3818,7 +3249,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 62
+            "line": 61
           }
         ]
       },
@@ -3828,7 +3259,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.70000000000000E-01
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -3836,20 +3267,20 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 66,
+      "check_line": 65,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 1.59999996423721E-01
         }
       }
     },
     {
       "file": "p3_1.adb",
-      "line": 102,
+      "line": 101,
       "col": 29,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -3858,7 +3289,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -3876,7 +3307,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 102,
+      "check_line": 101,
       "check_col": 29,
       "how_proved": "prover",
       "stats": {
@@ -3889,7 +3320,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 107,
+      "line": 106,
       "col": 28,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3898,7 +3329,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -3908,79 +3339,6 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 107,
-      "check_col": 28,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 106,
-      "col": 21,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Count_Lower_Elements",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 71
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 20,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
               "time": 0
             }
           },
@@ -4001,6 +3359,79 @@
       ],
       "check_file": "p3_1.adb",
       "check_line": 106,
+      "check_col": 28,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 105,
+      "col": 21,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 70
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 105,
       "check_col": 21,
       "how_proved": "prover",
       "stats": {
@@ -4013,7 +3444,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 113,
+      "line": 112,
       "col": 17,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4022,7 +3453,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4040,7 +3471,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 113,
+      "check_line": 112,
       "check_col": 17,
       "how_proved": "prover",
       "stats": {
@@ -4053,7 +3484,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 112,
+      "line": 111,
       "col": 43,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4062,7 +3493,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4091,7 +3522,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 112,
+      "check_line": 111,
       "check_col": 43,
       "how_proved": "prover",
       "stats": {
@@ -4104,7 +3535,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 112,
+      "line": 111,
       "col": 58,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4113,7 +3544,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4142,7 +3573,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 112,
+      "check_line": 111,
       "check_col": 58,
       "how_proved": "prover",
       "stats": {
@@ -4155,47 +3586,7 @@
     },
     {
       "file": "p3_1.adb",
-      "line": 112,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_INIT",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Count_Lower_Elements",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 71
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 112,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 112,
+      "line": 111,
       "col": 32,
       "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "info",
@@ -4204,7 +3595,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4222,7 +3613,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 112,
+      "check_line": 111,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
@@ -4236,6 +3627,46 @@
     {
       "file": "p3_1.adb",
       "line": 111,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 70
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 111,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 110,
       "col": 45,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4244,7 +3675,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4273,110 +3704,8 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 111,
+      "check_line": 110,
       "check_col": 45,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 111,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_INIT",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Count_Lower_Elements",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 71
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 15,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 15,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 111,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "p3_1.adb",
-      "line": 111,
-      "col": 32,
-      "rule": "VC_LOOP_INVARIANT_PRESERV",
-      "severity": "info",
-      "entity": {
-        "name": "P3_1.Count_Lower_Elements",
-        "sloc": [
-          {
-            "file": "p3_1.ads",
-            "line": 71
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 35,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 35,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "p3_1.adb",
-      "check_line": 111,
-      "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -4397,7 +3726,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4406,7 +3735,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
+              "steps": 15,
               "time": 0
             }
           },
@@ -4417,7 +3746,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
+              "steps": 15,
               "time": 0
             }
           },
@@ -4448,7 +3777,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4457,7 +3786,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
+              "steps": 35,
               "time": 0
             }
           },
@@ -4468,7 +3797,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
+              "steps": 35,
               "time": 0
             }
           },
@@ -4491,6 +3820,108 @@
     {
       "file": "p3_1.adb",
       "line": 109,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 70
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 109,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 109,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "P3_1.Count_Lower_Elements",
+        "sloc": [
+          {
+            "file": "p3_1.ads",
+            "line": 70
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "p3_1.adb",
+      "check_line": 109,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "p3_1.adb",
+      "line": 108,
       "col": 10,
       "rule": "VC_LOOP_VARIANT",
       "severity": "info",
@@ -4499,7 +3930,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4517,7 +3948,7 @@
         }
       ],
       "check_file": "p3_1.adb",
-      "check_line": 109,
+      "check_line": 108,
       "check_col": 10,
       "how_proved": "prover",
       "stats": {
@@ -4530,7 +3961,7 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 77,
+      "line": 76,
       "col": 49,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -4539,7 +3970,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4568,7 +3999,7 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 77,
+      "check_line": 76,
       "check_col": 49,
       "how_proved": "prover",
       "stats": {
@@ -4581,7 +4012,7 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 79,
+      "line": 78,
       "col": 48,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -4590,7 +4021,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4619,7 +4050,7 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 79,
+      "check_line": 78,
       "check_col": 48,
       "how_proved": "prover",
       "stats": {
@@ -4632,7 +4063,7 @@
     },
     {
       "file": "p3_1.ads",
-      "line": 75,
+      "line": 74,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -4641,7 +4072,7 @@
         "sloc": [
           {
             "file": "p3_1.ads",
-            "line": 71
+            "line": 70
           }
         ]
       },
@@ -4659,7 +4090,7 @@
         }
       ],
       "check_file": "p3_1.ads",
-      "check_line": 75,
+      "check_line": 74,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
@@ -4676,45 +4107,13 @@
       "assumptions": [
       ],
       "claim": {
-        "predicate": "CLAIM_POST",
-        "arg": {
-          "name": "P3_1.Count_Lower_Elements",
-          "sloc": [
-            {
-              "file": "p3_1.ads",
-              "line": 71
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "P3_1.Count_Lower_Elements",
-          "sloc": [
-            {
-              "file": "p3_1.ads",
-              "line": 71
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "P3_1.Count_Lower_Elements",
+          "name": "P3_1.Search_And_Increment",
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 71
+              "line": 11
             }
           ]
         }
@@ -4730,7 +4129,7 @@
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 39
+              "line": 38
             }
           ]
         }
@@ -4746,7 +4145,7 @@
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 39
+              "line": 38
             }
           ]
         }
@@ -4762,7 +4161,23 @@
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 39
+              "line": 38
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "P3_1.Inverse_Vector",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 22
             }
           ]
         }
@@ -4788,13 +4203,29 @@
       "assumptions": [
       ],
       "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "P3_1.Inverse_Vector",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 22
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
         "predicate": "CLAIM_POST",
         "arg": {
           "name": "P3_1.Get_Max_Count",
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 33
+              "line": 32
             }
           ]
         }
@@ -4810,7 +4241,7 @@
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 33
+              "line": 32
             }
           ]
         }
@@ -4826,7 +4257,187 @@
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 33
+              "line": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "P3_1.Count_Lower_Elements",
+            "sloc": [
+              {
+                "file": "p3_1.ads",
+                "line": 70
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "P3_1.Count_Lower_Elements",
+            "sloc": [
+              {
+                "file": "p3_1.ads",
+                "line": 70
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "P3_1.Count_Lower_Elements",
+            "sloc": [
+              {
+                "file": "p3_1.ads",
+                "line": 70
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "P3_1.Delete_Elements",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 61
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "P3_1.Compare_To",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "P3_1.Compare_To",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "P3_1.Count_Lower_Elements",
+            "sloc": [
+              {
+                "file": "p3_1.ads",
+                "line": 70
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "P3_1.Delete_Elements",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 61
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "P3_1.Count_Lower_Elements",
+            "sloc": [
+              {
+                "file": "p3_1.ads",
+                "line": 70
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "P3_1.Count_Lower_Elements",
+            "sloc": [
+              {
+                "file": "p3_1.ads",
+                "line": 70
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "P3_1.Count_Lower_Elements",
+            "sloc": [
+              {
+                "file": "p3_1.ads",
+                "line": 70
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "P3_1.Delete_Elements",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 61
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "P3_1.Compare_To",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 56
             }
           ]
         }
@@ -4850,67 +4461,15 @@
     },
     {
       "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "P3_1.Count_Lower_Elements",
-            "sloc": [
-              {
-                "file": "p3_1.ads",
-                "line": 71
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "P3_1.Count_Lower_Elements",
-            "sloc": [
-              {
-                "file": "p3_1.ads",
-                "line": 71
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "P3_1.Count_Lower_Elements",
-            "sloc": [
-              {
-                "file": "p3_1.ads",
-                "line": 71
-              }
-            ]
-          }
-        }
       ],
       "claim": {
         "predicate": "CLAIM_POST",
         "arg": {
-          "name": "P3_1.Delete_Elements",
+          "name": "P3_1.Count_Lower_Elements",
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 62
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_POST",
-        "arg": {
-          "name": "P3_1.Compare_To",
-          "sloc": [
-            {
-              "file": "p3_1.ads",
-              "line": 57
+              "line": 70
             }
           ]
         }
@@ -4922,91 +4481,11 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "P3_1.Compare_To",
+          "name": "P3_1.Count_Lower_Elements",
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 57
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "P3_1.Count_Lower_Elements",
-            "sloc": [
-              {
-                "file": "p3_1.ads",
-                "line": 71
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "P3_1.Delete_Elements",
-          "sloc": [
-            {
-              "file": "p3_1.ads",
-              "line": 62
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "P3_1.Count_Lower_Elements",
-            "sloc": [
-              {
-                "file": "p3_1.ads",
-                "line": 71
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "P3_1.Count_Lower_Elements",
-            "sloc": [
-              {
-                "file": "p3_1.ads",
-                "line": 71
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "P3_1.Count_Lower_Elements",
-            "sloc": [
-              {
-                "file": "p3_1.ads",
-                "line": 71
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "P3_1.Delete_Elements",
-          "sloc": [
-            {
-              "file": "p3_1.ads",
-              "line": 62
+              "line": 70
             }
           ]
         }
@@ -5018,11 +4497,27 @@
       "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "P3_1.Compare_To",
+          "name": "P3_1.Count_Lower_Elements",
           "sloc": [
             {
               "file": "p3_1.ads",
-              "line": 57
+              "line": 70
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "P3_1.Search_And_Increment",
+          "sloc": [
+            {
+              "file": "p3_1.ads",
+              "line": 11
             }
           ]
         }
@@ -5046,14 +4541,14 @@
     }
   ],
   "timings": {
-    "marking": 3.47599992528558E-03,
-    "globals (basic)": 1.05130001902580E-02,
-    "globals/properties (advanced)": 1.02620003744960E-02,
-    "flow analysis": 2.40649990737438E-02,
+    "marking": 2.39000003784895E-03,
+    "globals (basic)": 6.31400011479855E-03,
+    "globals/properties (advanced)": 9.13100037723780E-03,
+    "flow analysis": 2.35200002789497E-02,
     "codepeer results": 9.99999974737875E-06,
-    "init_why_sections": 8.45999980811030E-04,
-    "translation of standard": 5.91199984773993E-03,
-    "translation of compilation unit": 7.55710005760193E-02,
-    "proof": 8.53918266296387E+00
+    "init_why_sections": 8.37000028695911E-04,
+    "translation of standard": 4.39300015568733E-03,
+    "translation of compilation unit": 6.19530007243156E-02,
+    "proof": 6.67337322235107E+00
   }
 }

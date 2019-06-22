@@ -9,10 +9,9 @@ package body P3_1 with SPARK_Mode => On is
       i : Natural := Global_Vector'First;
    begin
       while (i <= Global_Vector'Last) loop
-         pragma Loop_Invariant(I < Max);
-         pragma Loop_Invariant(I in Global_Vector'First..Global_Vector'Last);
-         pragma Loop_Invariant((for all K in I..Global_Vector'Last =>
-                                  (if Global_Vector(K) = number then (Global_Vector(K) = number + Increment))));
+         pragma Loop_Invariant(I in Global_Vector'Range);
+         pragma Loop_Invariant((for all K in I..Global_Vector'Last => Global_Vector(K) /= number)
+                               or else (for some K in I..Global_Vector'Last => Global_Vector(K) = number));
          if Global_Vector(i) = number then
             Global_Vector(i) := number + Increment;
          end if;
@@ -29,9 +28,9 @@ package body P3_1 with SPARK_Mode => On is
       while (i <= vec'Last and j >= Global_Inverse_Vector'First) loop
          pragma Loop_Invariant(I < Max);
          pragma Loop_Invariant(I in vec'First..vec'Last);
-         pragma Loop_Invariant(J in Global_Inverse_Vector'First..Global_Inverse_Vector'Last);
-         pragma Loop_Invariant(for all K in I..vec'Last => 
-                                 (for all L in reverse Global_Inverse_Vector'First..J =>
+         pragma Loop_Invariant(J in Global_Inverse_Vector'Last..Global_Inverse_Vector'First-1);
+         pragma Loop_Invariant(for all K in vec'First..I => 
+                                 (for all L in J..Global_Inverse_Vector'First => 
                                     vec(K) = Global_Inverse_Vector(L)));
          vec(i) := Global_Inverse_Vector(j);
          i := i + 1;

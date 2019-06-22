@@ -19,7 +19,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U p3_1%b		p3_1.adb		71933b15 OO PK
+U p3_1%b		p3_1.adb		a9b5ce06 OO PK
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
@@ -27,7 +27,7 @@ W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W p3_1%s		p3_1.adb		p3_1.ali
 
-U p3_1%s		p3_1.ads		122e52ed OO PK
+U p3_1%s		p3_1.ads		8892baba OO PK
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
@@ -43,8 +43,8 @@ D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
 D a-tiinio.ads		20190518041254 390edddb ada.text_io.integer_io%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
-D p3_1.ads		20190621215728 11c66ff1 p3_1%s
-D p3_1.adb		20190621221229 2ac45ac0 p3_1%b
+D p3_1.ads		20190622180545 8b7a87a6 p3_1%s
+D p3_1.adb		20190622182312 f2e2afd3 p3_1%b
 D system.ads		20190518041255 085b6ffb system%s
 D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
@@ -62,64 +62,66 @@ X 5 a-nuelfu.ads
 X 8 a-textio.ads
 57K13*Text_IO 727e16 13|2w10 2r27
 X 12 p3_1.ads
-3K9*P3_1 81l5 81e9 13|1w6 1r16 6b14 117l5 117t9
-4N4*Max 15r37 25r82 36r75 36r97 65r30 74r30 13|12r36 30r36
-5A9*Vector(integer)<integer> 7r21 8r29 22r35 33r39 62r39 62r71 71r44 13|24r35
-. 25r13 45r40 76r39 76r71 77r20 101r44
-7a4*Global_Vector{5A9} 12r27 14r18 15r14 15r45 18r28 19r30 19r52 13|9r22
-. 11r19 13r37 13r58 14r51 15r39 15r71 16r13 17m13
-8a4*Global_Inverse_Vector{5A9} 23r16 24r43 25r14 25r51 26r6 28r39 29r49 13|25r24
-. 27r22 29r37 32r37 32r66 34r56 35r46 36r20
-9i4*Increment{integer} 13r26 14r45 16r33 17r40 19r80 13|15r99 17r42
-11U14*Search_And_Increment 11>36 13|8b14 21l8 21t28
-11i36 number{natural} 14r37 16r12 16r61 17r20 17r69 19r21 19r71 13|8b36 15r58
-. 15r90 16r32 17r33
-18i23 K{integer} 19r44 19r66
-22V13*Inverse_Vector{5A9} 24r18 27r28 29r22 13|24b13 41l8 41t22
+3K9*P3_1 80l5 80e9 13|1w6 1r16 6b14 116l5 116t9
+4N4*Max 15r37 25r82 35r75 35r97 64r30 73r30 13|29r36
+5A9*Vector(integer)<integer> 7r21 8r29 22r35 32r39 61r39 61r71 70r44 13|23r35
+. 24r13 44r40 75r39 75r71 76r20 100r44
+7a4*Global_Vector{5A9} 12r27 14r18 15r14 15r45 18r28 18r52 19r19 19r43 13|9r22
+. 11r19 12r37 13r49 13r71 14r57 14r79 15r13 16m13
+8a4*Global_Inverse_Vector{5A9} 23r16 24r43 25r14 25r51 26r6 28r39 29r49 13|24r24
+. 26r22 28r37 31r37 31r65 33r51 34r46 35r20
+9i4*Increment{integer} 13r26 14r45 16r33 17r40 13|16r42
+11U14*Search_And_Increment 11>36 13|8b14 20l8 20t28
+11i36 number{natural} 14r37 16r12 16r61 17r20 17r69 18r72 19r62 13|8b36 13r91
+. 14r98 15r32 16r33
+18i23 J{integer} 18r66
+19i14 J{integer} 19r57
+22V13*Inverse_Vector{5A9} 24r18 27r28 29r22 13|23b13 40l8 40t22
 27i23 I{integer} 29r44
 28i26 J{integer} 29r71
-33V13*Get_Max_Count{integer} 33>27 33>33 35r18 37r49 13|45b13 51l8 51t21
-33a27 vec1{5A9} 35r43 36r14 36r61 37r18 37r72 13|45b28 47r10 48r17
-33a33 vec2{5A9} 35r49 36r34 36r83 37r32 13|45b34 47r24 50r14
-39V13*Get_Bood_Pressure_Degree{string} 39>38 39>48 41r18 44r17 46r24 48r27
-. 50r30 52r33 54r36 55r43 13|53b13 69l8 69t32
-39i38 systolic{integer} 41r54 42r13 42r30 43r18 45r23 45r41 47r27 47r46 49r30
-. 49r49 51r32 53r35 13|53b39 55r10 57r13 57r31 59r14 59r33 61r14 61r33 63r13
-. 65r13
-39i48 diastolic{integer} 41r64 42r58 42r76 43r35 45r60 45r79 47r66 47r85
-. 49r69 49r88 51r50 53r53 13|53b49 55r27 57r50 57r69 59r53 59r72 61r53 61r72
-. 63r31 65r31
-57V13*Compare_To{boolean} 57>25 57>34 59r18 60r14 13|71b13 74l8 74t18
-57a25 String1{string} 59r40 60r35 13|71b25 73r14
-57a34 String2{string} 59r48 60r45 13|71b34 73r22
-62V13*Delete_Elements{5A9} 62>30 62>47 64r18 66r18 68r10 13|76b13 99l8 99t23
-62a30 Vector1{5A9} 64r45 65r13 65r43 67r31 67r48 69r24 69r41 13|76b30 77r53
-. 83r16 84r13 85r30 91r64 94r30 94r50 96r29 96r49
-62i47 Number{integer} 64r54 67r61 69r55 13|76b47 77r62 84r27 94r64 96r62
-67i26 K{integer} 67r56
-69i19 K{integer} 69r49
-71V13*Count_Lower_Elements{natural} 71>34 71>52 73r18 75r42 76r10 13|77s32
-. 101b13 116l8 116t28
-71a34 Vector1{5A9} 73r50 74r13 74r43 75r18 77r24 77r41 79r23 79r40 13|101b34
-. 102r22 105r16 106r13 110r37 110r52 112r44
-71i52 Number{integer} 73r59 77r52 79r52 13|101b52 106r24
-77i19 K{integer} 77r49
-79i18 X{integer} 79r48
+32V13*Get_Max_Count{integer} 32>27 32>33 34r18 36r49 13|44b13 50l8 50t21
+32a27 vec1{5A9} 34r43 35r14 35r61 36r18 36r72 13|44b28 46r10 47r17
+32a33 vec2{5A9} 34r49 35r34 35r83 36r32 13|44b34 46r24 49r14
+38V13*Get_Bood_Pressure_Degree{string} 38>38 38>48 40r18 43r17 45r24 47r27
+. 49r30 51r33 53r36 54r43 13|52b13 68l8 68t32
+38i38 systolic{integer} 40r54 41r13 41r30 42r18 44r23 44r41 46r27 46r46 48r30
+. 48r49 50r32 52r35 13|52b39 54r10 56r13 56r31 58r14 58r33 60r14 60r33 62r13
+. 64r13
+38i48 diastolic{integer} 40r64 41r58 41r76 42r35 44r60 44r79 46r66 46r85
+. 48r69 48r88 50r50 52r53 13|52b49 54r27 56r50 56r69 58r53 58r72 60r53 60r72
+. 62r31 64r31
+56V13*Compare_To{boolean} 56>25 56>34 58r18 59r14 13|70b13 73l8 73t18
+56a25 String1{string} 58r40 59r35 13|70b25 72r14
+56a34 String2{string} 58r48 59r45 13|70b34 72r22
+61V13*Delete_Elements{5A9} 61>30 61>47 63r18 65r18 67r10 13|75b13 98l8 98t23
+61a30 Vector1{5A9} 63r45 64r13 64r43 66r31 66r48 68r24 68r41 13|75b30 76r53
+. 82r16 83r13 84r30 90r64 93r30 93r50 95r29 95r49
+61i47 Number{integer} 63r54 66r61 68r55 13|75b47 76r62 83r27 93r64 95r62
+66i26 K{integer} 66r56
+68i19 K{integer} 68r49
+70V13*Count_Lower_Elements{natural} 70>34 70>52 72r18 74r42 75r10 13|76s32
+. 100b13 115l8 115t28
+70a34 Vector1{5A9} 72r50 73r13 73r43 74r18 76r24 76r41 78r23 78r40 13|100b34
+. 101r22 104r16 105r13 109r37 109r52 111r44
+70i52 Number{integer} 72r59 76r52 78r52 13|100b52 105r24
+76i19 K{integer} 76r49
+78i18 X{integer} 78r48
 X 13 p3_1.adb
-9i7 i{natural} 11r14 12r32 13r32 14r46 16r27 17r27 19m10 19r15
-14i41 K{integer} 15r53 15r85
-25a7 vec{12|5A9} 26r22 29r19 31r37 31r48 33r48 35r37 36m10 40r14
-26i7 i{natural} 29r14 30r32 31r32 33r45 36r14 37m10 37r15
-27i7 j{integer} 29r32 32r32 34r85 36r42 38m10 38r15
-33i40 K{integer} 35r41
-34i43 L{integer} 35r68
-77a7 Aux_Vector{12|5A9} 80r10 85m13 87r20 88r23 91r38 98r14
-78i7 j{natural} 85r24 86m13 86r18 87r16 91r33 93r16
-83i11 i{integer} 84r21 85r38 91r59 94r45 96r44
-94i25 K{integer} 94r58
-96i24 K{integer} 96r57
-102i7 i{natural} 105r13 106r21 109r43 110r32 111r44 112r42 113m10 113r15
-103i7 Count{natural} 107m13 107r22 111r32 112r32 115r14
+9i7 i{natural} 11r14 12r32 13r46 14r54 15r27 16r27 18m10 18r15
+13i41 K{integer} 13r85
+14i49 K{integer} 14r93
+24a7 vec{12|5A9} 25r22 28r19 30r37 30r48 32r45 34r37 35m10 39r14
+25i7 i{natural} 28r14 29r32 30r32 32r56 35r14 36m10 36r15
+26i7 j{integer} 28r32 31r32 33r48 35r42 37m10 37r15
+32i40 K{integer} 34r41
+33i43 L{integer} 34r68
+76a7 Aux_Vector{12|5A9} 79r10 84m13 86r20 87r23 90r38 97r14
+77i7 j{natural} 84r24 85m13 85r18 86r16 90r33 92r16
+82i11 i{integer} 83r21 84r38 90r59 93r45 95r44
+93i25 K{integer} 93r58
+95i24 K{integer} 95r57
+101i7 i{natural} 104r13 105r21 108r43 109r32 110r44 111r42 112m10 112r15
+102i7 Count{natural} 106m13 106r22 110r32 111r32 114r14
 
 QQ SPARKVERSION 2019 (20190517)
 GG EK_DIRECT_CALLS p3_1__search_and_increment 0
@@ -138,6 +140,14 @@ GG EK_DIRECT_CALLS p3_1__count_lower_elements 0
 GG EK_GLOBALS p3_1__count_lower_elements local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS p3_1 0
 GG EK_GLOBALS p3_1 local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 3 p3_1__global_vector p3_1__global_inverse_vector p3_1__increment calls_proof 0 calls 0 calls_conditional 0 local_var 3 p3_1__global_vector p3_1__global_inverse_vector p3_1__increment FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE ada__text_io__set_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__put__3 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__numerics__elementary_functions__cos FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__afcb_allocate__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE ada__text_io__skip_page__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__mode FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arccos__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__look_ahead FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__new_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE p3_1__get_bood_pressure_degree FALSE FALSE FALSE FALSE TRUE p3_1 VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__set_mode FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
@@ -150,16 +160,16 @@ GG EK_FLOW_SCOPE interfaces__shift_left__4 FALSE FALSE FALSE FALSE TRUE interfac
 GG EK_FLOW_SCOPE system__crtl__rewind FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__ftell64 FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__afcb_close__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE ada__integer_text_io__put__2 FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__name FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__end_of_page FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE p3_1 TRUE FALSE FALSE FALSE FALSE __standard
 GG EK_FLOW_SCOPE interfaces__c_streams__full_name FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__afcb_free__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arcsinh FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
-GG EK_FLOW_SCOPE ada__integer_text_io__get__3 FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__numerics__elementary_functions__cos__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE system__Ole FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__flush__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE p3_1 TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE ada__numerics__elementary_functions__cos__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__shift_right_arithmetic FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__rmdir FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__col FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
@@ -177,6 +187,7 @@ GG EK_FLOW_SCOPE ada__text_io__form FALSE FALSE FALSE FALSE TRUE ada__text_io VI
 GG EK_FLOW_SCOPE interfaces__c_streams__fread FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__put__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__stderr FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__integer_text_io__get__3 FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__Ogt FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__rotate_left FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__end_of_page__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
@@ -188,14 +199,13 @@ GG EK_FLOW_SCOPE system__crtl__isatty FALSE FALSE FALSE FALSE TRUE system__crtl 
 GG EK_FLOW_SCOPE system__parameters TRUE FALSE FALSE FALSE FALSE system
 GG EK_FLOW_SCOPE ada TRUE FALSE FALSE FALSE FALSE __standard
 GG EK_FLOW_SCOPE ada__text_io__col__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__integer_text_io__put__3 FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arccosh FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__tan FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__log FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__setvbuf FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__open FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE system__crtl__strlen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__is_open FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__strlen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__end_of_file FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__streams__write FALSE FALSE FALSE FALSE TRUE ada__streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
@@ -205,22 +215,23 @@ GG EK_FLOW_SCOPE system__crtl__mkdir FALSE FALSE FALSE FALSE TRUE system__crtl V
 GG EK_FLOW_SCOPE interfaces__rotate_right FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__fputc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__lseek FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
-GG EK_FLOW_SCOPE interfaces__rotate_left__4 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__write__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE interfaces__rotate_left__4 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__get_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__integer_text_io__put__3 FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__get_immediate FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__fread__2 FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
-GG EK_FLOW_SCOPE system__file_control_block__afcb_allocate FALSE FALSE FALSE FALSE TRUE system__file_control_block VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__set_input FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__file_control_block__afcb_allocate FALSE FALSE FALSE FALSE TRUE system__file_control_block VISIBLE_PART
+GG EK_FLOW_SCOPE p3_1__search_and_increment FALSE FALSE FALSE FALSE TRUE p3_1 VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__skip_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arctan__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__strncpy FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE system__wch_con__get_wc_encoding_method FALSE FALSE FALSE FALSE TRUE system__wch_con VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arctanh FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
-GG EK_FLOW_SCOPE p3_1__search_and_increment FALSE FALSE FALSE FALSE TRUE p3_1 VISIBLE_PART
 GG EK_FLOW_SCOPE system__Oeq FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__shift_left__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__end_of_file__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__log__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE system__parameters__default_stack_size FALSE FALSE FALSE FALSE TRUE system__parameters VISIBLE_PART
@@ -231,7 +242,6 @@ GG EK_FLOW_SCOPE ada__streams__read_sea FALSE FALSE FALSE FALSE TRUE ada__stream
 GG EK_FLOW_SCOPE ada__text_io__set_output FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__setvbuf FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__fputwc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
-GG EK_FLOW_SCOPE ada__integer_text_io TRUE FALSE FALSE TRUE ada__text_io__integer_io FALSE ada
 GG EK_FLOW_SCOPE system__wch_con__get_wc_encoding_method__2 FALSE FALSE FALSE FALSE TRUE system__wch_con VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__set_line_length__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__parameters__minimum_stack_size FALSE FALSE FALSE FALSE TRUE system__parameters VISIBLE_PART
@@ -247,6 +257,7 @@ GG EK_FLOW_SCOPE system__wch_con__is_start_of_encoding FALSE FALSE FALSE FALSE T
 GG EK_FLOW_SCOPE interfaces__c_streams__feof FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__set_error FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__streams__write_sea FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
+GG EK_FLOW_SCOPE ada__integer_text_io TRUE FALSE FALSE TRUE ada__text_io__integer_io FALSE ada
 GG EK_FLOW_SCOPE ada__text_io__skip_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__atoi FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__cot FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
@@ -270,7 +281,6 @@ GG EK_FLOW_SCOPE ada__text_io__get FALSE FALSE FALSE FALSE TRUE ada__text_io VIS
 GG EK_FLOW_SCOPE ada__text_io__standard_output FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__end_of_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io TRUE FALSE FALSE FALSE FALSE ada
-GG EK_FLOW_SCOPE ada__integer_text_io__get FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__free FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__rotate_left__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__standard_error FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
@@ -280,16 +290,16 @@ GG EK_FLOW_SCOPE system__crtl__tmpfile FALSE FALSE FALSE FALSE TRUE system__crtl
 GG EK_FLOW_SCOPE ada__text_io__delete FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__file_control_block TRUE FALSE FALSE FALSE FALSE system
 GG EK_FLOW_SCOPE system__crtl__dup FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
-GG EK_FLOW_SCOPE ada__streams__stream_element_arraySR FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
 GG EK_FLOW_SCOPE system__crtl__memmove FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE p3_1__inverse_vector FALSE FALSE FALSE FALSE TRUE p3_1 VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__file_exists FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__current_input FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__integer_text_io__get FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__ungetc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__freopen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE p3_1__delete_elements FALSE FALSE FALSE FALSE TRUE p3_1 VISIBLE_PART
-GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arccot__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__rotate_right__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arccot__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__set_col__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__generic_elementary_functions TRUE FALSE FALSE FALSE FALSE ada__numerics
 GG EK_FLOW_SCOPE ada__text_io__set_page_length__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
@@ -297,15 +307,15 @@ GG EK_FLOW_SCOPE ada__text_io__current_output FALSE FALSE FALSE FALSE TRUE ada__
 GG EK_FLOW_SCOPE ada__text_io__get__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams TRUE FALSE FALSE FALSE FALSE interfaces
 GG EK_FLOW_SCOPE ada__text_io__end_of_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__numerics__elementary_functions__Oexpon FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__is_regular_file FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__numerics__elementary_functions__Oexpon FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__dup2 FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__streams__stream_element_arraySR FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
 GG EK_FLOW_SCOPE ada__text_io__get_immediate__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__reset FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__eof_char FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
 GG EK_FLOW_SCOPE ada__text_io__current_error FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__new_page FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__integer_text_io__get__2 FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__get_line__3 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arcsin FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__set_binary_mode FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
@@ -314,18 +324,18 @@ GG EK_FLOW_SCOPE interfaces__shift_left__3 FALSE FALSE FALSE FALSE TRUE interfac
 GG EK_FLOW_SCOPE system__crtl__unlink FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__mktemp FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__line_length FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE system__crtl__fclose FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__standard_input__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE interfaces__c_streams__set_text_mode FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fclose FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__put FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__set_text_mode FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl TRUE FALSE FALSE FALSE FALSE system
 GG EK_FLOW_SCOPE interfaces__c_streams__fileno FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__integer_text_io__get__2 FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__io_exceptions TRUE FALSE FALSE FALSE FALSE ada
 GG EK_FLOW_SCOPE ada__text_io__get_line__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__set_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__fseek FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__sinh FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
-GG EK_FLOW_SCOPE ada__streams__stream_element_arraySW FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__sin FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__shift_right__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__standard_output__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
@@ -338,11 +348,10 @@ GG EK_FLOW_SCOPE system__crtl__fdopen FALSE FALSE FALSE FALSE TRUE system__crtl 
 GG EK_FLOW_SCOPE ada__text_io__put_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__standard_error__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__line_length__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__streams__stream_element_arraySW FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
 GG EK_FLOW_SCOPE ada__text_io__new_page__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__shift_right_arithmetic__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__reset__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__integer_io TRUE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__integer_text_io__put FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__current_input__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__wch_con TRUE FALSE FALSE FALSE FALSE system
 GG EK_FLOW_SCOPE system__crtl__popen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
@@ -352,13 +361,14 @@ GG EK_FLOW_SCOPE system__crtl__fseek64 FALSE FALSE FALSE FALSE TRUE system__crtl
 GG EK_FLOW_SCOPE ada__text_io__page_length FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__sin__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__current_output__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__file_typeDefault_Initial_Condition FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__fflush FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__get__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE p3_1__count_lower_elements FALSE FALSE FALSE FALSE TRUE p3_1 VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arccos FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__rotate_left__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__put__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__integer_io TRUE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__integer_text_io__put FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__skip_page FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions TRUE FALSE FALSE TRUE ada__numerics__generic_elementary_functions FALSE ada__numerics
 GG EK_FLOW_SCOPE ada__text_io__current_error__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
@@ -366,6 +376,7 @@ GG EK_FLOW_SCOPE interfaces__c_streams__fwrite FALSE FALSE FALSE FALSE TRUE inte
 GG EK_FLOW_SCOPE system__crtl__read FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__numerics__elementary_functions__tanh FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__realloc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__file_typeDefault_Initial_Condition FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__fgetc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__flush FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__streams TRUE FALSE FALSE FALSE FALSE ada
@@ -375,13 +386,4 @@ GG EK_FLOW_SCOPE ada__text_io__put_line__2 FALSE FALSE FALSE FALSE TRUE ada__tex
 GG EK_FLOW_SCOPE interfaces__rotate_right__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__ftell FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__create FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__set_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__put__3 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__numerics__elementary_functions__cos FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__afcb_allocate__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
-GG EK_FLOW_SCOPE ada__integer_text_io__put__2 FALSE FALSE FALSE FALSE TRUE ada__integer_text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__skip_page__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__mode FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__numerics__elementary_functions__arccos__2 FALSE FALSE FALSE FALSE TRUE ada__numerics__elementary_functions VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__look_ahead FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_END_MARKER
